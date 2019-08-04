@@ -1,0 +1,372 @@
+.header {
+  padding-top: 3em;
+}
+
+.AZ_logo {
+  max-width: 32px;
+}
+
+.two_letters {
+  fill: #FBFBFB;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AZ_logo:hover .two_letters {
+  fill: #00CEC9;
+}
+
+#AZ_logo:hover .first_letter {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+#AZ_logo:hover .second_letter {
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+}
+
+.bg {
+  fill: #fff;
+  fill-opacity: 0;
+}
+
+.nav_menu {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FBFBFB;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.nav_menu-logo {
+  min-width: 32px;
+  height: 52px;
+}
+
+.nav_menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_menu-links_anchors {
+  padding: 0;
+  margin: 0;
+  margin-right: 130px;
+}
+
+.nav_menu-links_anchors_link {
+  display: inline;
+}
+
+.nav_menu-links_anchors_link:first-child {
+  margin-right: 70px;
+}
+
+.nav_menu-links_anchors a {
+  color: #FBFBFB;
+  text-decoration: none;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.nav_menu-links_anchors a:hover {
+  color: #dfe6e9;
+}
+
+.nav_menu-links_lang {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_menu-links_lang-rus, .nav_menu-links_lang-bel, .nav_menu-links_lang-eng {
+  display: block;
+  position: relative;
+}
+
+.nav_menu-links_lang-eng, .nav_menu-links_lang-bel {
+  display: none;
+}
+
+
+header {
+  height: 35vh;
+  background-image: url(../img/Header-bg.jpg);
+  background-position: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main {
+  width: 90vw;
+  margin: -4rem auto 0;
+  background-color: #FBFBFB;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #3C4858;
+}
+
+.main_img {
+  max-width: 10rem;
+  max-height: 10rem;
+  background-color: #d7d4d1;
+  transform: translateY(-3rem);
+  -webkit-transform: translateY(-3rem);
+  -moz-transform: translateY(-3rem);
+  -ms-transform: translateY(-3rem);
+  -o-transform: translateY(-3rem);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 0px 16px 15px rgba(0, 0, 0, 0.2), 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 16px 15px rgba(0, 0, 0, 0.2), 0px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.main_img img {
+  max-width: 9rem;
+}
+
+.main_name {
+  font-size: 1.8rem;
+}
+
+.main_speciality {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.main_social {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.main_social-link {
+  margin: 10px;
+  display: inline-block;
+}
+
+.main_social-link-icon {
+  fill: #2D3238;
+  width: 1.8rem;
+  max-height: 1.8rem;
+}
+
+.main_social-link-icon_mail {
+  max-height: 2rem;
+  width: 2rem;
+}
+
+.main_social-link-icon_vk {
+  max-height: 2rem;
+  width: 2.3rem;
+}
+
+.main_social-link-icon_fb {
+  width: 0.9rem;
+}
+
+.main_social-link-icon:hover {
+  fill: #00CEC9;
+}
+
+.main_social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_about {
+  font-family: 'Raleway Regular', 'sans-serif';
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.skill-lvl {
+  padding: 0;
+  margin: 2.5rem auto 6rem;
+  text-align: center;
+  list-style: none;
+}
+
+.skill-lvl_line {
+  margin-bottom: 1.5rem;
+}
+
+.skill-lvl_line-name {
+  display: inline-block;
+  min-width: 12rem;
+  text-align: left;
+}
+
+.skill-lvl_line-max {
+  display: inline-block;
+  background-color: #D7D7D7;
+  min-width: 780px;
+  height: 10px;
+}
+
+.skill-lvl_line_real-lvl {
+  height: 10px;
+  background-color: #00CEC9;
+}
+
+.skill-lvl_line_real-lvl_html {
+  width: 80%;
+}
+
+.skill-lvl_line_real-lvl_css {
+  width: 75%;
+}
+
+.skill-lvl_line_real-lvl_js {
+  width: 15%;
+}
+
+.skill-lvl_line_real-lvl_jq {
+  width: 20%;
+}
+
+.skill-lvl_line_real-lvl_bs {
+  width: 70%;
+}
+
+.skill-lvl_line_real-lvl_sass {
+  width: 70%;
+}
+
+.skill-lvl_line_real-lvl_git {
+  width: 40%;
+}
+
+.skill-lvl_line_real-lvl_gh {
+  width: 40%;
+}
+
+.skill-lvl_line_real-lvl_svg {
+  width: 65%;
+}
+
+.zigzag-svg {
+  min-width: 37px;
+  height: 150px;
+  margin-right: 163px;
+}
+
+.zigzag-svg line {
+  stroke: #00CEC9;
+  stroke-width: 10px;
+}
+
+.prog-serv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+.prog-serv-list {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.prog-serv-list_ide {
+  max-width: 25%;
+  max-height: 120px;
+  margin-right: 5%;
+}
+
+.prog-serv-list_ide-prog {
+  display: inline;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+
+.prog-serv-list_design {
+  max-width: 38%;
+  max-height: 120px;
+  margin-right: 2%;
+}
+
+.prog-serv-list_design-prog {
+  display: inline;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+
+.prog-serv-list_other {
+  max-width: 20%;
+  max-height: 120px;
+}
+
+.prog-serv-list_other-prog {
+  display: inline;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+
+.projects {
+  height: 5vh;
+}
+
+body {
+  background-color: rgba(37, 52, 63, 0.8);
+  position: relative;
+  font-family: 'Roboto Bold', 'sans-serif';
+}
