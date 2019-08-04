@@ -1,0 +1,10 @@
+@import "_nav";
+@import "_header";
+@import "_main";
+@import "_projects";
+
+body {
+  background-color: rgba(37, 52, 63, 0.8);
+  position: relative;
+  font-family: 'Roboto Bold', 'sans-serif';
+}
