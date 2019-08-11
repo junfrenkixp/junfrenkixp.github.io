@@ -145,24 +145,27 @@
   }
 }
 
-.zigzag-svg {
-	min-width: 37px;
-  height: 150px;
-  margin-right: 163px;
-}
-.zigzag-svg line {
-	stroke: #00CEC9;
-	stroke-width: 10px;
-}
 .prog-serv {
   display: flex;
   text-align: left;
   align-items: center;
   margin-bottom: 5rem;
   padding-bottom: 5rem;
+  &_zigzag-svg {
+    min-width: 37px;
+    height: 150px;
+    margin-right: 163px;
+    & line {
+      stroke: #00CEC9;
+      stroke-width: 10px;
+    }
+  }
   &-list {
     padding: 0;
     margin-bottom: 0;
+    & p {
+      font-size: 1.17rem;
+    }
     &_ide {
       max-width: 25%;
       max-height: 120px;

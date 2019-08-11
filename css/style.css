@@ -33,7 +33,7 @@
 }
 
 .nav_menu {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -98,15 +98,28 @@
   padding: 0;
 }
 
-.nav_menu-links_lang-rus, .nav_menu-links_lang-bel, .nav_menu-links_lang-eng {
+.nav_menu-links_lang a {
+  color: #FBFBFB;
+  text-decoration: none;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.nav_menu-links_lang a:hover {
+  color: #dfe6e9;
+}
+
+.nav_menu-links_lang-ru, .nav_menu-links_lang-eng {
   display: block;
   position: relative;
 }
 
-.nav_menu-links_lang-eng, .nav_menu-links_lang-bel {
+.nav_menu-links_lang-eng {
   display: none;
 }
-
 
 header {
   height: 35vh;
@@ -298,17 +311,6 @@ header {
   width: 65%;
 }
 
-.zigzag-svg {
-  min-width: 37px;
-  height: 150px;
-  margin-right: 163px;
-}
-
-.zigzag-svg line {
-  stroke: #00CEC9;
-  stroke-width: 10px;
-}
-
 .prog-serv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,9 +323,24 @@ header {
   padding-bottom: 5rem;
 }
 
+.prog-serv_zigzag-svg {
+  min-width: 37px;
+  height: 150px;
+  margin-right: 163px;
+}
+
+.prog-serv_zigzag-svg line {
+  stroke: #00CEC9;
+  stroke-width: 10px;
+}
+
 .prog-serv-list {
   padding: 0;
   margin-bottom: 0;
+}
+
+.prog-serv-list p {
+  font-size: 1.17rem;
 }
 
 .prog-serv-list_ide {
@@ -365,8 +382,60 @@ header {
   height: 5vh;
 }
 
+.footer {
+  height: 140px;
+  padding-top: 40px;
+}
+
+.footer_up-button {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-color: #262C30;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer_up-button span, .footer_up-button span:before, .footer_up-button span:after {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #888A8B;
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -1px;
+  border-radius: 15%;
+}
+
+.footer_up-button span:before, .footer_up-button span:after {
+  content: "";
+  height: 10px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.footer_up-button span:before {
+  transform: rotate(35deg);
+  margin-left: -1px;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+
+.footer_up-button span:after {
+  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+
 body {
   background-color: rgba(37, 52, 63, 0.8);
   position: relative;
   font-family: 'Roboto Bold', 'sans-serif';
 }
+/*# sourceMappingURL=style.css.map */
