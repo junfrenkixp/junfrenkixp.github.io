@@ -1,5 +1,6 @@
 .heading {
   font-size: 1.8rem;
+  letter-spacing: 0.05em;
 }
 .container {
   max-width: 1200px;
@@ -38,6 +39,7 @@
     margin: 0 auto;
     & img {
       max-width: 9rem;
+      user-select: none;
     }
   }
   &_name {
@@ -104,6 +106,7 @@
       display: inline-block;
       min-width: 12rem;
       text-align: left;
+      letter-spacing: 0.02em;
     }
     &-max {
       display: inline-block;
@@ -149,7 +152,7 @@
   display: flex;
   text-align: left;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   padding-bottom: 5rem;
   &_zigzag-svg {
     min-width: 37px;

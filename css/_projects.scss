@@ -1,3 +1,106 @@
 .projects {
-  height: 5vh;
+  color: #FBFBFB;
+  font-family: 'Raleway Regular', 'sans-serif';
+  & .container {
+    padding: 0;
+  }
+  &_button {
+    display: inline-block;
+    height: 2.7rem;
+    border: 0.1rem solid #00CEC9;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    padding: 0 4rem;
+    color: #FBFBFB;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    &:hover {
+      background: #00CEC9;
+      text-decoration: none;
+      color: #FBFBFB;
+    }
+  }
+  &_project {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    &-row1 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      & > div {
+        display: flex;
+        align-items: flex-end;
+      }
+      &_desctop-photo {
+        width: 730px;
+        height: 400px;
+        background-color: #0abde3;
+        display: inline-block;
+      }
+      &_mobile-photo {
+        width: 180px;
+        height: 300px;
+        background-color: #48dbfb;
+        display: inline-block;
+        margin-left: -1rem;
+      }
+    }
+    &_title {
+      font-family: 'Raleway Bold';
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+    }
+    &_description {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      line-height: 23px;
+    }
+    & small > a {
+      color: #00CEC9;
+      &:hover {
+        color: #FBFBFB;
+      }
+    }
+    &_used-list {
+      padding: 0;
+      margin-top: 1.5rem;
+      &_item {
+        display: inline-block;
+        padding: .2rem .7rem;
+        background-color: rgba(38, 44, 48, 0.8);
+        color: #888A8B;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-right: .3rem;
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 20vw;
+      background-color: #00CEC9;
+      margin-top: 6rem;
+    }
+    &:last-child:after {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
 }
