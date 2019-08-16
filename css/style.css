@@ -424,7 +424,7 @@ header {
 }
 
 .projects_project {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 6rem;
 }
 
@@ -449,19 +449,17 @@ header {
           align-items: flex-end;
 }
 
-.projects_project-row1_desctop-photo {
-  width: 730px;
-  height: 400px;
-  background-color: #0abde3;
-  display: inline-block;
+.projects_project-row1_desc-img {
+  width: 45rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.projects_project-row1_mobile-photo {
-  width: 180px;
-  height: 300px;
-  background-color: #48dbfb;
-  display: inline-block;
-  margin-left: -1rem;
+.projects_project-row1_mob-img {
+  width: 12.5rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: -2.5rem;
 }
 
 .projects_project_title {

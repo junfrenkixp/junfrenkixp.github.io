@@ -40,18 +40,14 @@
         display: flex;
         align-items: flex-end;
       }
-      &_desctop-photo {
-        width: 730px;
-        height: 400px;
-        background-color: #0abde3;
-        display: inline-block;
+      &_desc-img {
+        width: 45rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
-      &_mobile-photo {
-        width: 180px;
-        height: 300px;
-        background-color: #48dbfb;
-        display: inline-block;
-        margin-left: -1rem;
+      &_mob-img {
+        width: 12.5rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        margin-left: -2.5rem;
       }
     }
     &_title {
