@@ -2,7 +2,7 @@
   color: #FBFBFB;
   font-family: 'Raleway Regular', 'sans-serif';
   & .container {
-    padding: 0;
+    width: 90vw;
   }
   &_button {
     display: inline-block;
@@ -41,11 +41,11 @@
         align-items: flex-end;
       }
       &_desc-img {
-        width: 45rem;
+        max-width: 45rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
       }
       &_mob-img {
-        width: 12.5rem;
+        max-width: 12.5rem;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         margin-left: -2.5rem;
       }

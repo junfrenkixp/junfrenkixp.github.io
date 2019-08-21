@@ -166,12 +166,12 @@
   &-list {
     padding: 0;
     margin-bottom: 0;
+    max-height: 120px;
     & p {
       font-size: 1.17rem;
     }
     &_ide {
       max-width: 25%;
-      max-height: 120px;
       margin-right: 5%;
       &-prog {
         display: inline;
@@ -181,7 +181,6 @@
     }
     &_design {
       max-width: 38%;
-      max-height: 120px;
       margin-right: 2%;
       &-prog {
         display: inline;
@@ -191,7 +190,6 @@
     }
     &_other {
       max-width: 20%;
-      max-height: 120px;
       &-prog {
         display: inline;
         margin-right: 1.5rem;

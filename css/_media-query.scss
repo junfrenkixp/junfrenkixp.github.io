@@ -1,0 +1,157 @@
+@media (max-width: 1280px) {
+  .projects_project-row1_desc-img {
+    max-width: 40rem;
+  }
+  .projects_project-row1_mob-img {
+    max-width: 11.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .projects_project-row1_desc-img {
+    max-width: 35rem;
+  }
+  .projects_project-row1_mob-img {
+    max-width: 10rem;
+  }
+  .skill-lvl_line {
+    &-max {
+      min-width: 84%;
+    }
+    &-name {
+      min-width: 15%;
+    }
+  }
+  .prog-serv-list {
+    max-height: 200px;
+  }
+}
+@media (max-width: 1080px) {
+  .prog-serv_zigzag-svg {
+    display: none;
+  }
+  .prog-serv-list {
+    &_ide {
+      max-width: 30%;
+      margin-right: 3%;
+    }
+    &_design {
+      max-width: 48%;
+      margin-right: 0;
+    }
+    &_other {
+      max-width: 22%;
+    }
+  }
+  .prog-serv {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1030px) {
+  .projects_button {
+    height: 2.3rem;
+    line-height: 2.1rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .projects_project-row1_mob-img {
+    display: none;
+  }
+  .skill-lvl_line {
+    text-align: left;
+    &-max {
+      min-width: 100%;
+    }
+  }
+  .projects_button {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 870px) {
+  .projects_project-row1 {
+    display: block;
+    text-align: center;
+    &_desc-img {
+      margin: 0 auto;
+    }
+  }
+  .projects_button {
+    padding: 0 4rem;
+    height: 2.7rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+  }
+  .nav_menu-links_anchors {
+      margin-right: 5rem;
+      &_link:first-child {
+        margin-right: 3rem;
+      }
+  }
+  .projects_project-row1_desc-img {
+    max-width: 90%;
+  }
+  .projects_project_used-list_item {
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .mobile_nav {
+    display: block;
+  }
+  .nav_menu-links {
+    display: none;
+  }
+  .projects_project:after {
+    width: 100%;
+  }
+  .prog-serv {
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    &-list {
+      margin-bottom: 2rem;
+      &_ide {
+        max-width: 100%;
+        margin-right: 0;
+        &-prog {
+          margin-right: 0.75rem;
+          margin-left: 0.75rem;
+        }
+      }
+      &_design {
+        max-width: 100%;
+        &-prog {
+          margin-right: 0.75rem;
+          margin-left: 0.75rem;
+        }
+      }
+      &_other {
+        max-width: 100%;
+        &-prog {
+          margin-right: 0.75rem;
+          margin-left: 0.75rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .projects_project small {
+    font-size: 100%;
+  }
+  .nav_menu {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .AZ_logo {
+    max-width: 26px;
+  }
+}
+
+
+
+@media (min-width: 769px) {
+  .mobile_nav {
+    display: none;
+  }
+}
