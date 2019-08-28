@@ -349,8 +349,11 @@ header {
   max-height: 120px;
 }
 
-.prog-serv-list p {
+.prog-serv-list li:first-child {
+  display: block;
   font-size: 1.17rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .prog-serv-list_ide {

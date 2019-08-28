@@ -167,8 +167,11 @@
     padding: 0;
     margin-bottom: 0;
     max-height: 120px;
-    & p {
+    & li:first-child {
+      display: block;
       font-size: 1.17rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
     &_ide {
       max-width: 25%;
