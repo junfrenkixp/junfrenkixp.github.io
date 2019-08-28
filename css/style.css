@@ -388,6 +388,11 @@ header {
   white-space: nowrap;
 }
 
+.tg-icon {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
 .projects {
   color: #FBFBFB;
   font-family: 'Raleway Regular', 'sans-serif';
