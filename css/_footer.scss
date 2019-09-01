@@ -5,25 +5,28 @@
     display: block;
     height: 60px;
     width: 60px;
-    background-color: #262C30;
+    background-color: #0a0c0d;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    & span, & span:before, & span:after {
+    & span,
+    & span:before,
+    & span:after {
       position: absolute;
       width: 2px;
       height: 25px;
-      background-color: #888A8B;
-      top: 50%; 
+      background-color: #888a8b;
+      top: 50%;
       margin-top: -13px;
-      left: 50%; 
+      left: 50%;
       margin-left: -1px;
       border-radius: 15%;
     }
-    & span:before, & span:after {
+    & span:before,
+    & span:after {
       content: "";
       height: 10px;
-	    transform-origin: top;
+      transform-origin: top;
     }
     & span:before {
       transform: rotate(35deg);

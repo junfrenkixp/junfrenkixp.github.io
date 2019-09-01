@@ -1,99 +1,111 @@
 .AZ_logo {
-	max-width: 32px;
+  max-width: 32px;
 }
 .two_letters {
-	fill: #FBFBFB;
-	background: #fff;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
+  fill: #fbfbfb;
+  background: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  &--sticky {
+    fill: #2d3238;
+  }
 }
-#AZ_logo:hover .two_letters{
-	fill: #00CEC9;
+#AZ_logo:hover .two_letters {
+  fill: #00cec9;
 }
 #AZ_logo:hover .first_letter {
-	transform: translateX(18px); 
+  transform: translateX(18px);
 }
 #AZ_logo:hover .second_letter {
-	transform: translateX(-18px); 
+  transform: translateX(-18px);
 }
 .bg {
-	fill: #fff;
-	fill-opacity: 0;
+  fill: #fff;
+  fill-opacity: 0;
 }
 .nav_menu {
-	z-index: 5;
-	position: absolute;
-	font-family: "Roboto", "sans-serif";
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: #FBFBFB;
-	text-transform: uppercase;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100vw;
-	margin: 0 auto;
-	padding: 3em 10vw;
-	&-sticky {
-		background-color: #636e72;
-		padding: 1em 10vw;
-		position: fixed;
-	}
-	&-logo {
-		min-width: 32px;
-		height: 52px;
-	}
-	&-links {
-		display: flex;
-		&_anchors {
-			padding: 0;
-			margin: 0;
-			margin-right: 130px;
-			&_link {
+  z-index: 5;
+  position: absolute;
+  font-family: "Roboto", "sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 10vw;
+  &-sticky {
+    background-color: #fbfbfb;
+    padding: 1em 10vw;
+    position: fixed;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12),
+      0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  }
+  &-logo {
+    min-width: 32px;
+    height: 52px;
+    z-index: 99;
+  }
+  &-links {
+    display: flex;
+    &_anchors {
+      padding: 0;
+      margin: 0;
+      margin-right: 130px;
+      & li {
         display: inline;
+      }
+      &_link {
+        color: #fbfbfb;
+        text-decoration: none;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        &:hover {
+          color: #fbfbfb;
+          text-decoration: none;
+        }
         &:first-child {
           margin-right: 70px;
         }
-			}
-			& a {
-	      color: #FBFBFB;
-	      text-decoration: none;
-	      transition: 0.2s;
-	      -webkit-transition: 0.2s;
-	      -moz-transition: 0.2s;
-	      -ms-transition: 0.2s;
-	      -o-transition: 0.2s;
-	      &:hover {
-          color: #dfe6e9;
+        &-sticky {
+          color: #2d3238;
         }
-			}
-		}
-		&_lang {
-			margin: 0;
-			padding: 0;
-			& a {
-				color: #FBFBFB;
-	      text-decoration: none;
-	      transition: 0.2s;
-	      -webkit-transition: 0.2s;
-	      -moz-transition: 0.2s;
-	      -ms-transition: 0.2s;
-	      -o-transition: 0.2s;
-	      &:hover {
-          color: #dfe6e9;
+      }
+    }
+    &_lang {
+      margin: 0;
+      padding: 0;
+      & a {
+        color: #fbfbfb;
+        text-decoration: none;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        &:hover {
+          color: #fbfbfb;
+          text-decoration: none;
         }
-			}
-			&-ru, &-eng {
-				display: block;
-				position: relative;
-			}
-			&-eng {
-				display: none;
-			}
-		}
-	}
+      }
+      &-ru,
+      &-eng {
+        display: block;
+        position: relative;
+      }
+      &-eng {
+        display: none;
+      }
+    }
+  }
 }
