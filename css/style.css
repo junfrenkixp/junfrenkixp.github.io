@@ -334,12 +334,12 @@ header {
           align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 3em 10vw;
+  padding: 3em 15vw;
 }
 
 .nav_menu-sticky {
   background-color: #fbfbfb;
-  padding: 1em 10vw;
+  padding: 1em 15vw;
   position: fixed;
   -webkit-box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
@@ -370,11 +370,6 @@ header {
 .nav_menu-links_anchors_link {
   color: #fbfbfb;
   text-decoration: none;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
 }
 
 .nav_menu-links_anchors_link:hover {
@@ -395,19 +390,18 @@ header {
   padding: 0;
 }
 
-.nav_menu-links_lang a {
+.nav_menu-links_lang-links {
   color: #fbfbfb;
   text-decoration: none;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
 }
 
-.nav_menu-links_lang a:hover {
+.nav_menu-links_lang-links:hover {
   color: #fbfbfb;
   text-decoration: none;
+}
+
+.nav_menu-links_lang-links-sticky {
+  color: #2d3238;
 }
 
 .nav_menu-links_lang-ru, .nav_menu-links_lang-eng {
@@ -704,11 +698,44 @@ header {
 }
 
 @media (max-width: 768px) {
-  .mobile_nav {
-    display: block;
+  .nav_menu-links_anchors {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav_menu-links_anchors_link:first-child {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+  .nav_menu-links_lang-links {
+    font-size: 1.5rem;
   }
   .nav_menu-links {
     display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    text-align: center;
   }
   .projects_project:after {
     width: 100%;
@@ -771,7 +798,6 @@ header {
   position: relative;
   z-index: 99;
   margin-bottom: 0;
-  cursor: pointer;
 }
 
 .mobile_nav-btn--active {
@@ -811,28 +837,7 @@ header {
   -o-transform: translateY(8px);
 }
 
-.mobile_nav-menu {
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  text-align: center;
-}
-
-.mobile_nav-menu--active {
+.mobile_menu--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,6 +846,48 @@ header {
   width: 100vw;
   top: 0;
   left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile_menu-links--active {
+  color: #2d3238;
+  fill: #2d3238;
+}
+
+.mobile_menu-links--active:hover {
+  color: #2d3238;
+}
+
+.mobile_menu-links--active-bg {
+  background-color: #2d3238;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.mobile_menu-links--active-bg_child:nth-child(1) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.mobile_menu-links--active-bg_child:nth-child(2) {
+  height: 0;
+}
+
+.mobile_menu-links--active-bg_child:nth-child(3) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 
 body {

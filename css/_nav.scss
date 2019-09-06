@@ -40,10 +40,10 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 3em 10vw;
+  padding: 3em 15vw;
   &-sticky {
     background-color: #fbfbfb;
-    padding: 1em 10vw;
+    padding: 1em 15vw;
     position: fixed;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12),
       0 7px 10px -5px rgba(0, 0, 0, 0.15);
@@ -65,11 +65,6 @@
       &_link {
         color: #fbfbfb;
         text-decoration: none;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
         &:hover {
           color: #fbfbfb;
           text-decoration: none;
@@ -85,17 +80,15 @@
     &_lang {
       margin: 0;
       padding: 0;
-      & a {
+      &-links {
         color: #fbfbfb;
         text-decoration: none;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
         &:hover {
           color: #fbfbfb;
           text-decoration: none;
+        }
+        &-sticky {
+          color: #2d3238;
         }
       }
       &-ru,
