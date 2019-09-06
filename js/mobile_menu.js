@@ -18,35 +18,6 @@
   );
   const anchorLinks = [navMenuLangsLinks, navMenuAnchorsLinks, logoTwoLetters];
 
-  function sticky() {
-    const scrolled = window.pageYOffset;
-    if (scrolled > 1) {
-      navMenu.classList.add("nav_menu-sticky");
-      for (let i = 0; i < anchorLinks.length; i++) {
-        for (let j = 0; j < anchorLinks[i].length; j++) {
-          anchorLinks[i][j].classList.add("mobile_menu-links--active");
-        }
-      }
-      for (let i = 0; i < burgerMenuButtonElements.length; i++) {
-        burgerMenuButtonElements[i].classList.add(
-          "mobile_menu-links--active-bg"
-        );
-      }
-    }
-    if (scrolled < 1) {
-      navMenu.classList.remove("nav_menu-sticky");
-      for (let i = 0; i < anchorLinks.length; i++) {
-        for (let j = 0; j < anchorLinks[i].length; j++) {
-          anchorLinks[i][j].classList.remove("mobile_menu-links--active");
-        }
-      }
-      for (let i = 0; i < burgerMenuButtonElements.length; i++) {
-        burgerMenuButtonElements[i].classList.remove(
-          "mobile_menu-links--active-bg"
-        );
-      }
-    }
-  }
   function toggleColors() {
     const scrolled = window.pageYOffset;
     if (scrolled > 1) {
@@ -110,5 +81,35 @@
     navMenuAnchorsLinks[i].addEventListener("click", close);
   }
   logo.addEventListener("click", close);
+
+  function sticky() {
+    const scrolled = window.pageYOffset;
+    if (scrolled > 1) {
+      navMenu.classList.add("nav_menu-sticky");
+      for (let i = 0; i < anchorLinks.length; i++) {
+        for (let j = 0; j < anchorLinks[i].length; j++) {
+          anchorLinks[i][j].classList.add("mobile_menu-links--active");
+        }
+      }
+      for (let i = 0; i < burgerMenuButtonElements.length; i++) {
+        burgerMenuButtonElements[i].classList.add(
+          "mobile_menu-links--active-bg"
+        );
+      }
+    }
+    if (scrolled < 1) {
+      navMenu.classList.remove("nav_menu-sticky");
+      for (let i = 0; i < anchorLinks.length; i++) {
+        for (let j = 0; j < anchorLinks[i].length; j++) {
+          anchorLinks[i][j].classList.remove("mobile_menu-links--active");
+        }
+      }
+      for (let i = 0; i < burgerMenuButtonElements.length; i++) {
+        burgerMenuButtonElements[i].classList.remove(
+          "mobile_menu-links--active-bg"
+        );
+      }
+    }
+  }
   window.addEventListener("scroll", sticky);
 })();
