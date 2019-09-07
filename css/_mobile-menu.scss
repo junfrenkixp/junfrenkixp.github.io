@@ -6,9 +6,6 @@
     position: relative;
     z-index: 99;
     margin-bottom: 0;
-    &--active {
-      background-color: green;
-    }
     &_elem {
       position: absolute;
       top: 50%;

@@ -25,10 +25,10 @@
         logoTwoLetters[i].classList.remove("two_letters--sticky");
       }
       for (let i = 0; i < navMenuLinks.length; i++) {
-        navMenuLinks[i].style.color = "#FBFBFB";
+        navMenuLinks[i].style.color = "";
       }
       for (let i = 0; i < burgerMenuBurger.length; i++) {
-        burgerMenuBurger[i].style.backgroundColor = "#FBFBFB";
+        burgerMenuBurger[i].style.backgroundColor = "";
       }
     }
   }

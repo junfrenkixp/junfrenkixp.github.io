@@ -713,9 +713,11 @@ header {
     margin-right: 0;
     margin-bottom: 4rem;
     font-size: 1.5rem;
+    color: #2d3238;
   }
   .nav_menu-links_lang-links {
     font-size: 1.5rem;
+    color: #2d3238;
   }
   .nav_menu-links {
     display: none;
@@ -798,10 +800,6 @@ header {
   position: relative;
   z-index: 99;
   margin-bottom: 0;
-}
-
-.mobile_nav-btn--active {
-  background-color: green;
 }
 
 .mobile_nav-btn_elem {
