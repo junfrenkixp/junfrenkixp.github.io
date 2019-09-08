@@ -410,10 +410,6 @@ header {
   position: relative;
 }
 
-.nav_menu-links_lang-eng {
-  display: none;
-}
-
 .projects {
   color: #fbfbfb;
   font-family: "Raleway Regular", "sans-serif";
@@ -909,7 +905,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #1a2730;
+  background-color: #0f1113;
   position: relative;
   font-family: "Roboto Bold", "sans-serif";
 }

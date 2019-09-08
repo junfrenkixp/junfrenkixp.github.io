@@ -6,11 +6,7 @@
     navbarLinks[i].addEventListener("click", smoothScroll);
   }
   function smoothScroll(event) {
-    event.preventDefault();
-    const targetId =
-      event.currentTarget.getAttribute("href") === "#"
-        ? "header"
-        : event.currentTarget.getAttribute("href");
+    const targetId = event.currentTarget.getAttribute("href") === "#" ? "header" : event.currentTarget.getAttribute("href");
     const targetPosition = document.querySelector(targetId).offsetTop;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - 100 - startPosition;
@@ -20,10 +16,7 @@
     function step(timestamp) {
       if (!start) start = timestamp;
       const progress = timestamp - start;
-      window.scrollTo(
-        0,
-        easeInOutCubic(progress, startPosition, distance, duration)
-      );
+      window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
       if (progress < duration) window.requestAnimationFrame(step);
     }
   }
