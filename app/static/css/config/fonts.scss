@@ -1,0 +1,43 @@
+@mixin font($name, $family, $weight) {
+  $fonts_dir: '../fonts/';
+  $font_file_path: $fonts_dir + $family + '/' + $name;
+
+  @font-face {
+    font-family: $family;
+    src: url($font_file_path+'.woff') format('woff');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@mixin font-mixin($font_name) {
+  font-family: '#{$font_name}';//, 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+}
+
+@include font('Regular', 'Roboto', 400);
+@include font('Medium', 'Roboto', 500);
+@include font('Bold', 'Roboto', 700);
+
+
+@include font('Regular', 'Raleway', 400);
+@include font('Bold', 'Raleway', 700);
+
+
+@mixin Roboto() {
+  @include font-mixin('Roboto');
+}
+@mixin Raleway() {
+  @include font-mixin('Raleway');
+}
+
+@mixin regular() {
+  font-weight: 400;
+}
+
+@mixin medium() {
+  font-weight: 500;
+}
+
+@mixin bold() {
+  font-weight: 700;
+}

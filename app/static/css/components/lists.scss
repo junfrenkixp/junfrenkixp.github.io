@@ -1,0 +1,24 @@
+.list {
+  position: relative;
+  text-align: left;
+  padding-left: 22px;
+  margin-top: 10px;
+  width: 100%;
+
+  > li {
+    margin-top: 8px;
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    width: 2px;
+    height: 100%;
+    background-color: $blue-color;
+  }
+}

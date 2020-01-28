@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 40px;
+  background-color: $dark-bg-color;
+
+  &__up-btn {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: $bg-color;
+    border-radius: 50%;
+
+    &:before {
+      content: url(../images/arrow.svg);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

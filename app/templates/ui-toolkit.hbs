@@ -1,0 +1,155 @@
+{{!Ui toolkit}}
+
+{{> layout/head }}
+
+<section class="ui">
+    <header class="ui__title">
+        <h1>UI Toolkit</h1>
+    </header>
+
+    <main class="ui__container">
+        <aside class="ui__aside">
+            <nav class="aside__inner">
+                <ul class="aside__nav">
+                    <li><button class="_link" data-id="ui-colors">Colors</button></li>
+                    <li><button class="_link" data-id="ui-text">Text</button></li>
+                    <li><button class="_link" data-id="ui-buttons">Buttons</button></li>
+                    <li><button class="_link" data-id="ui-tags">Tags</button></li>
+                    <li><button class="_link" data-id="ui-lists">Lists</button></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="ui__main">
+            {{> blocks/ui-section-start title='Colors' id='ui-colors'}}
+
+            <div class="ui__colors">
+                <div class="_item">
+                    <span style="font-style: italic;">$white-color</span>
+                    <div class="_color" style="background-color: #FBFBFB; color: black;">
+                        <span>#FBFBFB</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$white-hover-color</span>
+                    <div class="_color" style="background-color: #ECECEC; color: black;">
+                        <span>#ECECEC</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$grey-color</span>
+                    <div class="_color" style="background-color: #888A8B;">
+                        <span>#888A8B</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$bg-color</span>
+                    <div class="_color" style="background-color: #141618;">
+                        <span>#141618</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$dark-color</span>
+                    <div class="_color" style="background-color: #3C4858;">
+                        <span>#3C4858</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$dark-2-color</span>
+                    <div class="_color" style="background-color: #2D3238;">
+                        <span>#2D3238</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$dark-bg-color</span>
+                    <div class="_color" style="background-color: #1A2730;">
+                        <span>#1A2730</span>
+                    </div>
+                </div>
+                <div class="_item">
+                    <span style="font-style: italic;">$blue-color</span>
+                    <div class="_color" style="background-color: #00CEC9;">
+                        <span>#00CEC9</span>
+                    </div>
+                </div>
+            </div>
+
+            {{> blocks/ui-section-end}}
+
+
+            {{> blocks/ui-section-start title='Text' id='ui-text'}}
+
+            <div class="ui__text">
+                <div class="_item">
+                    <h2 class="heading">H2- heading (Roboto)</h2>
+                </div>
+                <div class="_item">
+                    <h3 class="sub-heading">H3 - sub heading (Roboto)</h3>
+                </div>
+                <div class="_item">
+                    <h5 class="sub-heading--small">H5 - sub heading small (Roboto)</h5>
+                </div>
+                <div class="_item">
+                    <p class="text">P - text (Raleway)</p>
+                </div>
+                <div class="_item">
+                    <p class="text--bold">P - text bold (Raleway)</p>
+                </div>
+            </div>
+
+            {{> blocks/ui-section-end}}
+
+
+            {{> blocks/ui-section-start title='Buttons' id='ui-buttons'}}
+
+            <div class="ui-list">
+                <div class="ui-list__item">
+                    <button class="btn btn-primary">Button</button>
+                </div>
+                <div class="ui-list__item">
+                    <button class="btn btn-secondary">Button</button>
+                </div>
+            </div>
+
+            {{> blocks/ui-section-end}}
+
+
+            {{> blocks/ui-section-start title='Tags' id='ui-tags'}}
+
+            <div class="ui-list">
+                <div class="ui-list__item">
+                    <div class="tag-item">html</div>
+                </div>
+            </div>
+
+            {{> blocks/ui-section-end}}
+
+
+            {{> blocks/ui-section-start title='Lists' id='ui-lists'}}
+            <div class="list-wrap">
+                <h3 class="sub-heading">List</h3>
+                <ul class="list">
+                    <li class="text">Lorem</li>
+                    <li class="text">Lorem</li>
+                    <li class="text">Lorem</li>
+                </ul>
+            </div>
+
+            {{> blocks/ui-section-end}}
+
+
+        </section>
+    </main>
+    <script>
+        window.onload = () => {
+            const $btn = $('.aside__nav').find('._link');
+            $btn.on('click', function () {
+                const id = $(this).data('id');
+                $('html, body').animate({
+                    scrollTop: $(`#${id}`).offset().top
+                }, 600);
+            });
+        };
+    </script>
+</section>
+
+{{> layout/bottom }}

@@ -1,0 +1,21 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  background: $bg-color;
+  border-radius: 3px;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $grey-color;
+  padding: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

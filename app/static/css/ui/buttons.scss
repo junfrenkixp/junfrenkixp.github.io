@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 22px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 25px;
+  min-width: 180px;
+  border: 2px solid $blue-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+    border: 2px solid transparent;
+  }
+
+  &-primary {
+    color: $white-color;
+
+    &:hover {
+      background-color: $white-color;
+      color: $blue-color;
+    }
+  }
+  
+  &-secondary {
+    color: $blue-color;
+
+    &:hover {
+      background-color: $blue-color;
+      color: $white-color;
+    }
+  }
+}

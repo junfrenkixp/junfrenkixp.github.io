@@ -1,0 +1,22 @@
+{{!Главная страница}}
+
+{{> layout/header }}
+
+<div class="container">
+  <main class="main">
+      <div class="container-md">
+        {{> blocks/about}}
+        {{> blocks/skills}}
+        {{> blocks/services}}
+      </div>
+  </main>
+  <section class="projects">
+    <h2 class="heading">Projects</h2>
+    {{> blocks/project}}
+    {{> blocks/project}}
+    {{> blocks/project}}
+  </section>
+
+</div>
+
+{{> layout/footer }}

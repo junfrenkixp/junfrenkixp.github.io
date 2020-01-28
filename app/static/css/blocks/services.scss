@@ -1,0 +1,105 @@
+.services {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 70px;
+    text-align: left;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+    }
+
+    &:before {
+      content: url("../images/zigzag.svg");
+      width: 30px;
+      margin-right: 100px;
+
+      @include tablet-and-phone {
+        content: none;
+      }
+    }
+  }
+
+  &__col {
+    @include mobile {
+    &:first-child {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      margin-left: 22px;
+
+      @include mobile {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 2px;
+          width: 2px;
+          height: 100%;
+          background-color: $blue-color;
+        }
+      }
+    }
+
+    @include mobile-l {
+      margin-left: 82px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 60px;
+        width: 2px;
+        height: 100%;
+        background-color: $blue-color;
+      }
+    }
+
+    @include mobile-m {
+      margin-left: 42px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        width: 2px;
+        height: 100%;
+        background-color: $blue-color;
+      }
+    }
+  }
+  
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

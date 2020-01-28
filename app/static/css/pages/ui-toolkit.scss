@@ -1,0 +1,120 @@
+.ui {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 10px;
+  color: $dark-color;
+
+  &__title {
+    text-align: center;
+    padding: 30px 0;
+    flex-shrink: 0;
+    color: $white-color;
+  }
+
+  &__container {
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #dfe4ea;
+    margin: 0 -10px;
+    display: flex;
+  }
+
+  &__aside {
+    flex-basis: 25%;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+
+    .aside {
+      &__inner {
+        padding: 40px 0;
+      }
+
+      &__nav {
+        ._link {
+          display: block;
+          font-size: 20px;
+          padding: 10px 30px;
+          width: 100%;
+          text-align: left;
+
+          &:hover {
+            background-color: darken(#f9f9f9, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &__main {
+    flex-basis: 75%;
+    padding: 0 10px;
+
+    .main {
+      &__section {
+        position: relative;
+        padding: 30px 20px;
+        border-bottom: 1px solid darken(#f5f5f5, 5%);
+
+        ._title h2 {
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 2rem;
+        }
+
+        ._body {
+          margin-top: 20px;
+
+          .row + .row {
+            margin-top: 20px;
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          width: 40%;
+          background-color: #535c68;
+        }
+      }
+    }
+  }
+
+  &__colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    ._item {
+      text-align: center;
+      margin-right: 15px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    ._color {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      box-shadow: 4px 10px 20px rgba(69, 69, 69, 0.25);
+      border-radius: 75px;
+    }
+  }
+
+  &__text {
+    ._item {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
