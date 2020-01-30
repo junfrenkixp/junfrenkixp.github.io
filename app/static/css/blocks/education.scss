@@ -65,10 +65,19 @@
     }
   }
 
+  &__info {
+    @include desktop {
+      width: 718px;
+    }
+    @include laptop {
+      width: 578px;
+    }
+  }
+
   &__col-1 {
-    min-width: 210px;
+    width: 210px;
     margin-right: 40px;
-    padding-right: 100px;
+    padding-right: 60px;
 
     @include tablet-and-phone {
       min-width: auto;
