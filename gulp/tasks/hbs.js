@@ -1,8 +1,6 @@
 module.exports = () => {
     $.gulp.task('hbs', function () {
-        const data = {
-                j_title: ''
-            },
+        const data = {},
             options = {
                 ignorePartials: true,
                 batch: [

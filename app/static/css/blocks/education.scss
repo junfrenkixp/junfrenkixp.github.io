@@ -1,0 +1,80 @@
+.education {
+  margin-bottom: 100px;
+
+  &__item {
+    display: flex;
+    margin-top: 60px;
+
+    @include tablet-and-phone {
+      flex-direction: column;
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    @include Roboto;
+    @include bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: underline;
+    transition: 0s;
+  
+    @include tablet {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    @include mobile {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &:before {
+      content: url(../images/link.svg);
+      position: absolute;
+      left: -25px;
+      
+      @include tablet-and-phone {
+        position: relative;
+        left: 0;
+        margin-right: 7px;
+      }
+    }
+
+    &:hover {
+      color: $blue-color;
+      text-decoration: underline;
+
+      &:before {
+        content: url(../images/link-hover.svg);
+      }
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 12px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      background-color: $blue-color;
+      height: 100%;
+      width: 2px;
+    }
+  }
+
+  &__col-1 {
+    min-width: 210px;
+    margin-right: 40px;
+    padding-right: 100px;
+
+    @include tablet-and-phone {
+      min-width: auto;
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding-right: 0;
+    }
+  }
+}
