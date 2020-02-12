@@ -18,7 +18,7 @@
     line-height: 28px;
     text-decoration: underline;
     transition: 0s;
-  
+
     @include tablet {
       font-size: 22px;
       line-height: 26px;
@@ -32,10 +32,9 @@
       content: url(../images/link.svg);
       position: absolute;
       left: -25px;
-      
+
       @include tablet-and-phone {
-        position: relative;
-        left: 0;
+        position: static;
         margin-right: 7px;
       }
     }
@@ -56,7 +55,7 @@
     padding-left: 12px;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       left: 2px;
       background-color: $blue-color;
@@ -72,10 +71,27 @@
     @include laptop {
       width: 578px;
     }
+
+    span {
+      display: block;
+    }
+
+    a {
+      color: $blue-color;
+
+      &:hover {
+        color: $blue-color;
+        text-decoration: underline;
+      }
+      &:visited {
+        color: $blue-color;
+        text-decoration: none;
+      }
+    }
   }
 
   &__col-1 {
-    width: 210px;
+    min-width: 210px;
     margin-right: 40px;
     padding-right: 60px;
 

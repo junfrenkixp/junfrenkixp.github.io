@@ -52,6 +52,7 @@
     @include mobile {
       flex-direction: column;
       margin-left: 22px;
+      width: calc(100% - 22px);
 
       @include mobile {
         &:before {
@@ -67,6 +68,7 @@
 
     @include mobile-l {
       margin-left: 82px;
+      width: calc(100% - 82px);
 
       &:before {
         content: "";
@@ -80,6 +82,7 @@
 
     @include mobile-m {
       margin-left: 42px;
+      width: calc(100% - 42px);
 
       &:before {
         content: "";
@@ -94,6 +97,7 @@
   
   &__item {
     margin-bottom: 10px;
+    word-wrap: break-word;
 
     &:last-child {
       margin-bottom: 0;

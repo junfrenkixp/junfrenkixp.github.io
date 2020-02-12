@@ -18,17 +18,8 @@
     text-decoration: none;
     border: 2px solid transparent;
   }
-
-  &-primary {
-    color: $white-color;
-
-    &:hover {
-      background-color: $white-color;
-      color: $blue-color;
-    }
-  }
   
-  &-secondary {
+  &-primary {
     color: $blue-color;
 
     &:hover {
