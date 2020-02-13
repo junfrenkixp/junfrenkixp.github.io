@@ -1513,3 +1513,6 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 3px;
 	background-color: #00cec9;
 }
+.overflow {
+	overflow: hidden;
+}
