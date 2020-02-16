@@ -1170,15 +1170,13 @@ main {
 }
 
 .nav-container {
-	position: relative;
-	width: 90%;
-	max-width: 1520px;
-	margin: 0 auto;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-	.nav-container {
-		max-width: 800px;
-	}
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 5vh;
+	width: 100%;
+	z-index: 100000;
+	height: 70px;
 }
 @media (max-width: 767px) {
 	.nav-container {
@@ -1201,25 +1199,23 @@ main {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	position: absolute;
-	width: 100%;
-	top: 5vh;
 	z-index: 10;
+	max-width: 1520px;
+	width: 90%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 	.nav-menu {
-		width: calc(100% - 20px);
+		max-width: 800px;
 	}
 }
 @media (max-width: 374px) {
 	.nav-menu {
+		width: 100%;
 		top: 7vh;
 	}
-}
-.nav-menu.active .nav-menu__logo {
-	-webkit-transform: translateY(-30px);
-	-ms-transform: translateY(-30px);
-	transform: translateY(-30px);
 }
 .nav-menu.active .nav-menu__logo svg {
 	fill: #3c4858;
@@ -1230,7 +1226,8 @@ main {
 	display: -ms-flexbox;
 	display: flex;
 }
-.nav-menu.active .nav-menu__mobile-button {
+.nav-menu.active .nav-menu__mobile-button,
+.nav-menu.active .nav-menu__logo {
 	-webkit-transform: translateY(-30px);
 	-ms-transform: translateY(-30px);
 	transform: translateY(-30px);
@@ -1252,6 +1249,29 @@ main {
 }
 .nav-menu.active .nav-menu__mobile-button span {
 	opacity: 0;
+}
+.nav-container.sticky {
+	position: fixed;
+	top: 0;
+	background-color: #1a2730;
+	box-shadow: 4px 10px 20px rgba(69, 69, 69, 0.25);
+	transition: background-color 0.3s;
+}
+.nav-container.sticky .nav-menu {
+	top: 0;
+	transition: top 0.3s;
+	height: 70px;
+}
+.nav-container.sticky .nav-menu__mobile-button,
+.nav-container.sticky .nav-menu__logo {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+@media (max-width: 767px) {
+	.nav-container.fixed {
+		width: calc(100% - 20px);
+	}
 }
 .nav-menu__logo {
 	-webkit-transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
