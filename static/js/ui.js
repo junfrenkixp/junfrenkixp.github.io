@@ -18,28 +18,17 @@
 	}
 	mobileMenu();
 
-	function stickyMenu() {
-		let scrolled = window.pageYOffset;
-		const navContainer = document.querySelector(".nav-container");
-		if (scrolled > 300) {
-			navContainer.classList.add("sticky");
-		}
-		if (scrolled < 300) {
-			navContainer.classList.remove("sticky");
-		}
-	}
-	window.addEventListener("scroll", stickyMenu);
-
 	const navbarLinks = document.querySelectorAll(".nav-menu a");
 	for (let i = 0; i < navbarLinks.length; i++) {
 		navbarLinks[i].addEventListener("click", smoothScroll);
 	}
 	function smoothScroll(event) {
-		const targetId = event.currentTarget.getAttribute("href") === "#" ? "header" : event.currentTarget.getAttribute("href");
-		const targetPosition = document.querySelector(targetId).offsetTop;
+		event.preventDefault();
+		const targetId = event.currentTarget.getAttribute("href") === "#" ? "header" : event.currentTarget.getAttribute("href");		
+		const targetPosition = document.querySelector(targetId).getBoundingClientRect();
 		const startPosition = window.pageYOffset;
-		const distance = targetPosition - 100 - startPosition;
-		const duration = 1000;
+		const distance = targetPosition.top - 100;
+		const duration = 500;
 		let start = null;
 		window.requestAnimationFrame(step);
 		function step(timestamp) {
@@ -55,4 +44,17 @@
 		t -= 2;
 		return (c / 2) * (t * t * t + 2) + b;
 	}
+
+	
+	function stickyMenu() {
+		let scrolled = window.pageYOffset;
+		const navContainer = document.querySelector(".nav-container");
+		if (scrolled > 300) {
+			navContainer.classList.add("sticky");
+		}
+		if (scrolled < 300) {
+			navContainer.classList.remove("sticky");
+		}
+	}
+	window.addEventListener("scroll", stickyMenu);
 })();
