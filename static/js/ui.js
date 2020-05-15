@@ -23,8 +23,13 @@
 		navbarLinks[i].addEventListener("click", smoothScroll);
 	}
 	function smoothScroll(event) {
-		event.preventDefault();
-		const targetId = event.currentTarget.getAttribute("href") === "#" ? "header" : event.currentTarget.getAttribute("href");		
+		const targetId = event.currentTarget.getAttribute("href") === "#" ? "header" : event.currentTarget.getAttribute("href");
+		const checkIsId = targetId[0];
+		if (checkIsId == '#') {
+			event.preventDefault();
+		}	else {
+			return;
+		}
 		const targetPosition = document.querySelector(targetId).getBoundingClientRect();
 		const startPosition = window.pageYOffset;
 		const distance = targetPosition.top - 100;
