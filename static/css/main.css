@@ -515,6 +515,7 @@ main {
 	clip-rule: evenodd;
 }
 .about__speciality {
+	display: block;
 	margin-top: 30px;
 	text-transform: uppercase;
 }
