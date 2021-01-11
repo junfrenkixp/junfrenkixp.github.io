@@ -1,641 +1,743 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="format-detection" content="telephone=no" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<meta name="description" content="Portfolio website for a junior frontend developer" />
-		<meta name="keywords" content="junior frontend developer artsiom zavaley artem web portfolio html css javascript js начинающий разработчик артём артем завалей веб портфолио" />
-		<meta property="og:title" content="Junior Frontend developer" />
-		<meta property="og:description" content="Portfolio website for a junior frontend developer" />
-		<meta property="og:url" content="https://junfrenkixp.github.io/" />
-		<meta property="og:site_name" content="Junior Frontend developer" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="https://junfrenkixp.github.io/static/images/preview-eng.jpg" />
+	<meta name="description" content="Сайт-портфолио начинающего frontend разработчика" />
+	<meta name="keywords" content="начинающий frontend разработчик артём артем завалей веб портфолио html css javascript js" />
+	<meta property="og:title" content="Начинающий Frontend разработчик" />
+	<meta property="og:description" content="Сайт-портфолио начинающего frontend разработчика" />
+	<meta property="og:url" content="https://junfrenkixp.github.io/" />
+	<meta property="og:site_name" content="Начинающий Frontend разработчик" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://junfrenkixp.github.io/static/images/preview-ru.jpg" />
+	<link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon" />
 
-		<meta name="yandex-verification" content="8c9b2908bd38091a" />
+	<title>Артём Завалей HTML-верстальщик</title>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131477692-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+	<link rel="stylesheet" href="./static/css/main.css" />
+</head>
 
-			gtag('config', 'UA-131477692-1');
-		</script>
-
-		<link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon" />
-
-		<title>Artsiom Zavaley HTML-coder</title>
-
-		<link rel="stylesheet" href="./static/css/main.css" />
-	</head>
-
-	<body>
-		<div class="nav-container">
-			<nav class="nav-menu">
-				<div class="nav-menu__logo">
-					<a href="#header">
-						<svg class="main-logo" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32.7 52.7">
-							<path
-								d="M7.1,0C8,0,9,0.2,9.8,0.6c0.8,0.4,1.6,0.9,2.3,1.5c0.6,0.6,1.2,1.4,1.5,2.2c0.4,0.9,0.6,1.8,0.6,2.8V52
+<body>
+<div class="nav-container">
+	<nav class="nav-menu">
+		<div class="nav-menu__logo">
+			<a href="#header">
+				<svg class="main-logo" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32.7 52.7">
+					<path
+							d="M7.1,0C8,0,9,0.2,9.8,0.6c0.8,0.4,1.6,0.9,2.3,1.5c0.6,0.6,1.2,1.4,1.5,2.2c0.4,0.9,0.6,1.8,0.6,2.8V52
                   c0,0.4-0.3,0.6-0.6,0.6c0,0,0,0-0.1,0h-3.2c-0.2,0-0.4-0.1-0.5-0.2c-0.1-0.1-0.2-0.3-0.2-0.4V35.5h-5V52c0,0.2-0.1,0.4-0.2,0.5
                   c-0.1,0.1-0.3,0.2-0.5,0.2H0.7c-0.2,0-0.4-0.1-0.5-0.2C0.1,52.4,0,52.2,0,52V7.1c0-1,0.2-1.9,0.6-2.8c0.4-0.8,0.9-1.6,1.5-2.3
                   c0.6-0.6,1.4-1.1,2.2-1.5C5.2,0.2,6.1,0,7.1,0z M9.6,7.1c0-1.4-1.1-2.5-2.5-2.5c-0.7,0-1.3,0.3-1.8,0.7C4.8,5.8,4.6,6.4,4.6,7.1
                   V31h5L9.6,7.1z"
-							/>
-							<path
-								d="M32.7,4.1l-9.5,44H32c0.3,0,0.6,0.2,0.7,0.5c0,0.1,0,0.1,0,0.2V52c0,0.3-0.2,0.6-0.5,0.7c-0.1,0-0.1,0-0.2,0
+					/>
+					<path
+							d="M32.7,4.1l-9.5,44H32c0.3,0,0.6,0.2,0.7,0.5c0,0.1,0,0.1,0,0.2V52c0,0.3-0.2,0.6-0.5,0.7c-0.1,0-0.1,0-0.2,0
                   H19.2c-0.3,0-0.6-0.2-0.7-0.5c0-0.1,0-0.1,0-0.2v-3.5l0.1-0.3L28,4.6h-8.8c-0.2,0-0.4-0.1-0.5-0.2c-0.1-0.1-0.2-0.3-0.2-0.5V0.7
                     c0-0.3,0.2-0.6,0.5-0.7c0.1,0,0.1,0,0.2,0H32c0.3,0,0.6,0.2,0.7,0.5c0,0.1,0,0.1,0,0.2L32.7,4.1L32.7,4.1z"
-							/>
-						</svg>
-					</a>
-				</div>
-
-				<div class="nav-menu__mobile">
-					<div class="nav-menu__mobile-button">
-						<span></span>
-					</div>
-				</div>
-
-				<div class="nav-menu__links">
-					<ul class="nav-menu__links-anchors">
-						<li class="nav-menu__links-item">
-							<a href="#about">
-								About me
-							</a>
-						</li>
-						<li class="nav-menu__links-item">
-							<a href="#projects">
-								Projects
-							</a>
-						</li>
-					</ul>
-					<ul class="nav-menu__links-langs">
-						<li class="nav-menu__links-item">
-							<a href="index-ru.html" rel="nofollow noopener noreferrer">
-								ru
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+					/>
+				</svg>
+			</a>
 		</div>
-		<header class="header" id="header"></header>
-		<div class="container">
-			<main class="main">
-				<div class="container-md">
-					<section class="about" id="about">
-						<div class="about__img">
-							<img src="./static/images/my_photo.png" alt="my_photo" />
-						</div>
-						<h1 class="heading" id="about_me">
-							Artsiom Zavaley
-							<span class="sub-heading--small about__speciality">
-								html-coder
+
+		<div class="nav-menu__mobile">
+			<div class="nav-menu__mobile-button">
+				<span></span>
+			</div>
+		</div>
+
+		<div class="nav-menu__links">
+			<ul class="nav-menu__links-anchors">
+				<li class="nav-menu__links-item">
+					<a href="#about">
+						Обо мне
+					</a>
+				</li>
+				<li class="nav-menu__links-item">
+					<a href="#projects">
+						Проекты
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<header class="header" id="header"></header>
+<div class="container">
+	<main class="main">
+		<div class="container-md">
+			<section class="about" id="about">
+				<div class="about__img">
+					<img src="./static/images/my_photo.png" alt="my_photo" />
+				</div>
+				<h1 class="heading" id="about_me">
+					Артём Завалей
+					<span class="sub-heading--small about__speciality">
+								HTML-верстальщик
 							</span>
-						</h1>
-						<ul class="about__social">
-							<li class="about__social-link">
-								<a href="mailto:azavaley@bk.ru" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 18" class="about__social-link-icon about__social-link-icon_mail">
-										<path d="M0,0v18h24V0H0z M6.6,7.9L2,13.6V4.2C2,4.2,6.6,7.9,6.6,7.9z M2.5,2h19L12,9.7C12,9.7,2.5,2,2.5,2z M8.2,9.2l3.8,3.1 l3.8-3.1l5.6,6.8H2.7L8.2,9.2z M17.4,7.9L22,4.2v9.3C22,13.5,17.4,7.9,17.4,7.9z" />
-									</svg>
-								</a>
-							</li>
-							<li class="about__social-link">
-								<a href="https://vk.com/naomixp" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 14" class="about__social-link-icon about__social-link-icon_vk">
-										<path d="M13.2,14c0.6,0,0.9-0.4,0.9-0.9c0-1.9,0.7-2.9,2.1-1.6c1.5,1.5,1.8,2.5,3.6,2.5h3.2c0.8,0,1.1-0.3,1.1-0.7	c0-0.9-1.4-2.4-2.6-3.5c-1.7-1.6-1.8-1.6-0.3-3.5C22.9,4,25.2,1,23.1,1h-4c-0.8,0-0.8,0.4-1.1,1.1c-1,2.3-2.9,5.4-3.6,4.9	c-0.8-0.5-0.4-2.4-0.4-5.3c0-0.8,0-1.3-1.1-1.5C12.3,0.1,11.7,0,11.1,0C8.9,0,7.3,1,8.2,1.1c1.6,0.3,1.4,3.7,1.1,5.2	c-0.6,2.6-3-2-4-4.3C5,1.4,4.9,1,4,1H0.8C0.3,1,0,1.2,0,1.5c0,0.6,3,6.7,5.8,9.8C8.5,14.3,11.3,14,13.2,14z" />
-									</svg>
-								</a>
-							</li>
-							<li class="about__social-link">
-								<a href="https://www.linkedin.com/in/artsiom-zavaley-848323182/" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 23" class="about__social-link-icon">
-										<path d="M5,2.5C5,3.9,3.9,5,2.5,5S0,3.9,0,2.5C0,1.1,1.1,0,2.5,0S5,1.1,5,2.5z M5,7H0v16h5V7z M13,7H8v16h5v-8.4c0-4.7,6-5.1,6,0V23	h5V12.9c0-7.9-8.9-7.6-11-3.7C13,9.2,13,7,13,7z" />
-									</svg>
-								</a>
-							</li>
-							<li class="about__social-link">
-								<a href="https://t.me/frenkixp" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 20" class="about__social-link-icon">
-										<path
-											class="tg-icon"
-											d="M18.4,19.8c0.3,0.2,0.7,0.3,1.1,0.1c0.4-0.1, 0.6-0.5,0.7-0.8c0.9-4.1,3-14.4,3.8-18.1
+				</h1>
+				<ul class="about__social">
+					<li class="about__social-link">
+						<a href="mailto:azavaley@bk.ru" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 18" class="about__social-link-icon about__social-link-icon_mail">
+								<path d="M0,0v18h24V0H0z M6.6,7.9L2,13.6V4.2C2,4.2,6.6,7.9,6.6,7.9z M2.5,2h19L12,9.7C12,9.7,2.5,2,2.5,2z M8.2,9.2l3.8,3.1 l3.8-3.1l5.6,6.8H2.7L8.2,9.2z M17.4,7.9L22,4.2v9.3C22,13.5,17.4,7.9,17.4,7.9z" />
+							</svg>
+						</a>
+					</li>
+					<li class="about__social-link">
+						<a href="https://vk.com/naomixp" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 14" class="about__social-link-icon about__social-link-icon_vk">
+								<path d="M13.2,14c0.6,0,0.9-0.4,0.9-0.9c0-1.9,0.7-2.9,2.1-1.6c1.5,1.5,1.8,2.5,3.6,2.5h3.2c0.8,0,1.1-0.3,1.1-0.7	c0-0.9-1.4-2.4-2.6-3.5c-1.7-1.6-1.8-1.6-0.3-3.5C22.9,4,25.2,1,23.1,1h-4c-0.8,0-0.8,0.4-1.1,1.1c-1,2.3-2.9,5.4-3.6,4.9	c-0.8-0.5-0.4-2.4-0.4-5.3c0-0.8,0-1.3-1.1-1.5C12.3,0.1,11.7,0,11.1,0C8.9,0,7.3,1,8.2,1.1c1.6,0.3,1.4,3.7,1.1,5.2	c-0.6,2.6-3-2-4-4.3C5,1.4,4.9,1,4,1H0.8C0.3,1,0,1.2,0,1.5c0,0.6,3,6.7,5.8,9.8C8.5,14.3,11.3,14,13.2,14z" />
+							</svg>
+						</a>
+					</li>
+					<li class="about__social-link">
+						<a href="https://www.linkedin.com/in/artsiom-zavaley-848323182/" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 23" class="about__social-link-icon">
+								<path d="M5,2.5C5,3.9,3.9,5,2.5,5S0,3.9,0,2.5C0,1.1,1.1,0,2.5,0S5,1.1,5,2.5z M5,7H0v16h5V7z M13,7H8v16h5v-8.4c0-4.7,6-5.1,6,0V23	h5V12.9c0-7.9-8.9-7.6-11-3.7C13,9.2,13,7,13,7z" />
+							</svg>
+						</a>
+					</li>
+					<li class="about__social-link">
+						<a href="https://t.me/frenkixp" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 20" class="about__social-link-icon">
+								<path
+										class="tg-icon"
+										d="M18.4,19.8c0.3,0.2,0.7,0.3,1.1,0.1c0.4-0.1, 0.6-0.5,0.7-0.8c0.9-4.1,3-14.4,3.8-18.1
                   c0.1-0.3,0-0.6-0.3-0.8C23.5,0,23.2-0.1,22.9,0C18.7,1.6,5.8,6.4,0.5,8.4C0.2,8.5,0,8.8,0,9.2c0,0.4,0.3,0.7,0.6,0.8
                   c2.4,0.7,5.5,1.7,5.5,1.7s1.5,4.4,2.2,6.6c0.1,0.3,0.3,0.5,0.6,0.6c0.3,0.1,0.6,0,0.8-0.2c1.2-1.1,3.1-2.9,3.1-2.9
                   S16.4,18.3,18.4,19.8z M7.4,11.1l1.7,5.5l0.4-3.5c0,0,6.5-5.9,10.2-9.2c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.3-0.1-0.4-0.1
                   C15,6.2,7.4,11.1,7.4,11.1z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li class="about__social-link">
-								<a href="https://github.com/junfrenkixp" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 23.4" class="about__social-link-icon">
-										<path
-											d="M12,0C5.4,0,0,5.4,0,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.5,9,23.1,9,22.8v-2.2c-3.3,0.7-4-1.4-4-1.4c-0.5-1.4-1.3-1.8-1.3-1.8
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="about__social-link">
+						<a href="https://github.com/junfrenkixp" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 23.4" class="about__social-link-icon">
+								<path
+										d="M12,0C5.4,0,0,5.4,0,12c0,5.3,3.4,9.8,8.2,11.4C8.8,23.5,9,23.1,9,22.8v-2.2c-3.3,0.7-4-1.4-4-1.4c-0.5-1.4-1.3-1.8-1.3-1.8
                   c-1.1-0.7,0.1-0.7,0.1-0.7c1.2,0.1,1.8,1.2,1.8,1.2c1.1,1.8,2.8,1.3,3.5,1c0.1-0.8,0.4-1.3,0.8-1.6C7.1,17,4.3,16,4.3,11.4
                   c0-1.3,0.5-2.4,1.2-3.2C5.5,7.9,5,6.6,5.7,5c0,0,1-0.3,3.3,1.2c1-0.3,2-0.4,3-0.4c1,0,2,0.1,3,0.4C17.3,4.7,18.3,5,18.3,5
                   c0.7,1.7,0.2,2.9,0.1,3.2c0.8,0.8,1.2,1.9,1.2,3.2c0,4.6-2.8,5.6-5.5,5.9c0.4,0.4,0.8,1.1,0.8,2.2v3.3c0,0.3,0.2,0.7,0.8,0.6
                   C20.6,21.8,24,17.3,24,12C24,5.4,18.6,0,12,0z"
-										/>
-									</svg>
-								</a>
-							</li>
-							<li class="about__social-link">
-								<a href="https://codepen.io/junfrenkixp/" target="_blank" rel="nofollow noopener noreferrer">
-									<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 354.41 354.28" class="about__social-link-icon">
-										<path
-											d="M354.2,177.31c0,17-.1,34,.1,51,.1,7.5-2.8,12.9-9.1,17.1q-78.9,52.2-157.6,104.9c-8,5.3-13.1,5.3-21.1-.1Q87.75,297.71,9,245.31c-6.3-4.2-9.1-9.6-9-17.1q.15-51,0-102c0-7.7,2.9-13.2,9.4-17.5q78.45-52,156.7-104.3c8.9-5.9,13.4-5.9,22.4.1q78.3,52.2,156.7,104.3c6.5,4.3,9.3,9.8,9.2,17.5C354.1,143.31,354.2,160.31,354.2,177.31ZM161.8,43.71,42.6,123.21C60.2,135,77,146.31,94,157.41c1,.7,3.5.2,4.7-.6q30-19.8,59.8-40.1a8.53,8.53,0,0,0,3.2-5.9c.3-10.8.1-21.7.1-32.5Zm149.8,79.4L193,44.11a14.19,14.19,0,0,0-.5,2.2c0,21.8-.1,43.7.1,65.5,0,1.8,1.9,4.1,3.5,5.3,19.5,13.3,39.3,26.3,58.8,39.5,2.7,1.8,4.5,1.6,7-.1,10.6-7.3,21.3-14.3,31.9-21.5ZM161.8,310.51c0-23.8.1-46.2-.1-68.7,0-1.5-1.8-3.4-3.2-4.4-19.7-13.3-39.6-26.5-59.3-39.9-2.4-1.6-4.1-1.6-6.5,0-15.3,10.4-30.7,20.6-46,30.9-1.2.8-2.3,1.7-3.7,2.8Zm96.5-115c-20.9,13.9-41.5,27.8-62.2,41.4a7.78,7.78,0,0,0-3.9,7.3c.1,20.3.1,40.7.1,61,0,1.4.2,2.8.3,5.1l119-79.2Zm-135-18.4c17.7,11.8,34.9,23.4,52.2,34.8a3.94,3.94,0,0,0,3.5-.2c17.2-11.4,34.3-22.8,52-34.6-17.7-11.8-34.9-23.4-52.2-34.8a3.94,3.94,0,0,0-3.5.2C158,153.81,140.9,165.31,123.3,177.11Zm-92.6-25.3v50.5L68.5,177Zm255,25.3,37.6,25.2V152Z"
-										/>
-									</svg>
-								</a>
-							</li>
-						</ul>
-						<a class="btn btn-primary about__resume" href="./static/pdf/Resume.pdf" target="_blank" rel="nofollow noopener noreferrer">Open Resume</a>
-						<p class="text about__text">
-							Hi, I am 20 years old and I am from Mozyr. I develop websites and try to absorb all the information that  I can find, and at the same time practice. In the future I want to reach the level of a professional who can easily create something like that. I also post my works on GitHub and Codepen.
-						</p>
-					</section>
-					<section class="skills">
-						<h2 class="heading" id="skills">Skills</h2>
-						<div class="skills__row">
-							<div class="skills__col skills__col-md">
-								<div class="skills__col-inner">
-									<div class="skills__col">
-										<h3 class="sub-heading">HTML</h3>
-										<ul class="list">
-											<li class="text--lg">HTML 5</li>
-											<li class="text--lg">Handlebars</li>
-											<li class="text--lg">Pug</li>
-											<li class="text--lg">Semantic layout</li>
-										</ul>
-									</div>
-									<div class="skills__col">
-										<h3 class="sub-heading">JS</h3>
-										<ul class="list">
-											<li class="text--lg">ES6 (ES 2015)</li>
-											<li class="text--lg">JQuery</li>
-											<li class="text--lg">Plugins connection</li>
-										</ul>
-									</div>
-								</div>
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="about__social-link">
+						<a href="https://codepen.io/junfrenkixp/" target="_blank" rel="nofollow noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 354.41 354.28" class="about__social-link-icon">
+								<path
+										d="M354.2,177.31c0,17-.1,34,.1,51,.1,7.5-2.8,12.9-9.1,17.1q-78.9,52.2-157.6,104.9c-8,5.3-13.1,5.3-21.1-.1Q87.75,297.71,9,245.31c-6.3-4.2-9.1-9.6-9-17.1q.15-51,0-102c0-7.7,2.9-13.2,9.4-17.5q78.45-52,156.7-104.3c8.9-5.9,13.4-5.9,22.4.1q78.3,52.2,156.7,104.3c6.5,4.3,9.3,9.8,9.2,17.5C354.1,143.31,354.2,160.31,354.2,177.31ZM161.8,43.71,42.6,123.21C60.2,135,77,146.31,94,157.41c1,.7,3.5.2,4.7-.6q30-19.8,59.8-40.1a8.53,8.53,0,0,0,3.2-5.9c.3-10.8.1-21.7.1-32.5Zm149.8,79.4L193,44.11a14.19,14.19,0,0,0-.5,2.2c0,21.8-.1,43.7.1,65.5,0,1.8,1.9,4.1,3.5,5.3,19.5,13.3,39.3,26.3,58.8,39.5,2.7,1.8,4.5,1.6,7-.1,10.6-7.3,21.3-14.3,31.9-21.5ZM161.8,310.51c0-23.8.1-46.2-.1-68.7,0-1.5-1.8-3.4-3.2-4.4-19.7-13.3-39.6-26.5-59.3-39.9-2.4-1.6-4.1-1.6-6.5,0-15.3,10.4-30.7,20.6-46,30.9-1.2.8-2.3,1.7-3.7,2.8Zm96.5-115c-20.9,13.9-41.5,27.8-62.2,41.4a7.78,7.78,0,0,0-3.9,7.3c.1,20.3.1,40.7.1,61,0,1.4.2,2.8.3,5.1l119-79.2Zm-135-18.4c17.7,11.8,34.9,23.4,52.2,34.8a3.94,3.94,0,0,0,3.5-.2c17.2-11.4,34.3-22.8,52-34.6-17.7-11.8-34.9-23.4-52.2-34.8a3.94,3.94,0,0,0-3.5.2C158,153.81,140.9,165.31,123.3,177.11Zm-92.6-25.3v50.5L68.5,177Zm255,25.3,37.6,25.2V152Z"
+								/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<a class="btn btn-primary about__resume" href="./static/pdf/Resume.pdf" target="_blank" rel="nofollow noopener noreferrer">Открыть резюме</a>
+				<p class="text about__text">
+					<span>Привет, меня зовут Артём, мне 21 год и я HTML-верстальщик с желанием стать полноценным Front-End разработчиком. Чтобы достичь цели я смотрю обучающие ролики на YouTube, читаю статьи на Habr и Medium, а также при любой возможности консультируюсь у более опытных коллег.</span>
+					<br>
+					<span>На данном этапе я совершенствуюсь в JavaScript и занимаюсь наполнением портфолио. Считаю, что работа — это непрерывное образование, поэтому всегда ищу возможности для саморазвития.</span>
+				</p>
+			</section>
+			<section class="skills">
+				<h2 class="heading" id="skills">Навыки</h2>
+				<div class="skills__row">
+					<div class="skills__col skills__col-md">
+						<div class="skills__col-inner">
+							<div class="skills__col">
+								<h3 class="sub-heading">HTML</h3>
+								<ul class="list">
+									<li class="text--lg">HTML 5</li>
+									<li class="text--lg">Handlebars</li>
+									<li class="text--lg">Pug</li>
+									<li class="text--lg">Семантическая вёрстка</li>
+								</ul>
 							</div>
+							<div class="skills__col">
+								<h3 class="sub-heading">JS</h3>
+								<ul class="list">
+									<li class="text--lg">ES6 (ES 2015)</li>
+									<li class="text--lg">JQuery</li>
+									<li class="text--lg">Подключение плагинов</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-							<div class="skills__col">
-								<h3 class="sub-heading">CSS</h3>
-								<ul class="list">
-									<li class="text--lg">CSS 3</li>
-									<li class="text--lg">SASS</li>
-									<li class="text--lg">Flexbox</li>
-									<li class="text--lg">Сross-browser layout</li>
-									<li class="text--lg">Adaptive layout</li>
-									<li class="text--lg">Table layout</li>
-									<li class="text--lg">Basic CSS animation</li>
-									<li class="text--lg">Bootstrap 3/4</li>
-								</ul>
-							</div>
-							<div class="skills__col">
-								<h3 class="sub-heading">Other</h3>
-								<ul class="list">
-									<li class="text--lg">BEM</li>
-									<li class="text--lg">SVG</li>
-									<li class="text--lg">Git</li>
-									<li class="text--lg">GitHub/GitLab</li>
-									<li class="text--lg">CSS sprites</li>
-									<li class="text--lg">NPM/Yarn</li>
-									<li class="text--lg">Gulp</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section class="services">
-						<h2 class="heading" id="services">Programms & Services</h2>
-						<div class="services__row">
-							<div class="services__inner">
-								<div class="services__col">
-									<ul class="services__list">
-										<li class="services__item">
-											<p class="text--lg">
-												Adobe Photoshop
-											</p>
-										</li>
-										<li class="services__item">
-											<p class="text--lg">
-												Adobe Illustrator
-											</p>
-										</li>
-										<li class="services__item">
-											<p class="text--lg">
-												Adobe InDesign
-											</p>
-										</li>
-									</ul>
-								</div>
-								<div class="services__col">
-									<ul class="services__list">
-										<li class="services__item">
-											<p class="text--lg">
-												Figma
-											</p>
-										</li>
-										<li class="services__item">
-											<p class="text--lg">
-												Avocode
-											</p>
-										</li>
-										<li class="services__item">
-											<p class="text--lg">
-												FileZilla
-											</p>
-										</li>
-									</ul>
-								</div>
-								<div class="services__col">
-									<ul class="services__list">
-										<li class="services__item">
-											<p class="text--lg">
-												PageSpeed Insights/Audits
-											</p>
-										</li>
-										<li class="services__item">
-											<p class="text--lg">
-												TinyPNG/Squoosh
-											</p>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="education">
-						<h2 class="heading" id="education">Education</h2>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2019-11-21">21.11.2019</time> -
-									<time datetime="2019-12-31">31.12.2019</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://learn.javascript.ru/courses/jsbasic" target="_blank" rel="nofollow noopener noreferrer">Course "JavaScript/DOM/Interfaces" for newbies (RU)</a>
-								<div class="education__item-inner">
-									<p class="text education__info">Course from <a href="https://learn.javascript.ru/" target="_blank" rel="nofollow noopener noreferrer">learn.javascript.ru</a>.</p>
-									<p class="text education__info">
-										<span>Main themes:</span>
-										<span>1) Basic JavaScript;</span>
-										<span>2) Document, interface generation;</span>
-										<span>3) Events, interaction with the visitor;</span>
-										<span>4) Project;</span>
-										<span>5) Network Communication, AJAX.</span>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2019">2019</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener noreferrer">freeCodeCamp</a>
-								<div class="education__item-inner">
-									<p class="text education__info"><span>JavaScript Algorithms and Data Structures Certification;</span>Front End Libraries Certification (JQuery).</p>
-								</div>
-							</div>
-						</div>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2019">2019</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://praktikum.yandex.ru/web/" target="_blank" rel="nofollow noopener noreferrer">Yandex.Practical</a>
-								<div class="education__item-inner">
-									<p class="text education__info">Free part of the front-end developer course.</p>
-								</div>
-							</div>
-						</div>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2018">2018</time> -
-									<time datetime="2019">2019</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://geekbrains.ru/" target="_blank" rel="nofollow noopener noreferrer">GeekBrains</a>
-								<div class="education__item-inner">
-									<p class="text education__info">Free courses; tests.</p>
-								</div>
-							</div>
-						</div>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2017">2017</time> -
-									<time datetime="2018">2018</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://glo.academy/" target="_blank" rel="nofollow noopener noreferrer">Glo Academy</a>
-								<div class="education__item-inner">
-									<p class="text education__info">Workshops; online webinars.</p>
-								</div>
-							</div>
-						</div>
-						<div class="education__item">
-							<div class="education__col-1">
-								<p class="sub-heading">
-									<time datetime="2017">2017</time> -
-									<time datetime="2018">2018</time>
-								</p>
-							</div>
-							<div class="education__col-2">
-								<a class="education__item-title" href="https://www.belstu.by/" target="_blank" rel="nofollow noopener noreferrer">Belarusian State Technological University</a>
-								<div class="education__item-inner">
-									<p class="text education__info">
-										One course in the specialty "Information Systems and Technologies".
-									</p>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="experience">
-						<h2 class="heading" id="experience">Experience</h2>
-						<div class="experience__item">
-							<div class="experience__col-1">
-								<p class="sub-heading">
-									<time datetime="2019-10">10.2019</time> -
-									<time datetime="2019-11">11.2019</time>
-								</p>
-							</div>
-							<div class="experience__col-2">
-								<h3 class="experience__item-title">
-									<a href="https://ozitag.com/" target="_blank" rel="nofollow noopener noreferrer">
-										OziTag
-									</a>
-								</h3>
-								<div class="experience__item-inner">
-									<p class="text experience__info">
-										<span>Two months of practice HTML-coder.</span>
-										<span>Primary occupation:</span>
-										Creation of landing pages, one-page and multi-page sites, widgets, emails.
-										<span>Teamwork.</span>
-									</p>
-									<ul class="tag-list">
-										<li class="tag-item">HTML</li>
-										<li class="tag-item">CSS</li>
-										<li class="tag-item">Sass</li>
-										<li class="tag-item">Handlebars</li>
-										<li class="tag-item">SVG</li>
-										<li class="tag-item">npm/yarn</li>
-										<li class="tag-item">BEM</li>
-										<li class="tag-item">Git</li>
-										<li class="tag-item">Gitlab</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
+					<div class="skills__col">
+						<h3 class="sub-heading">CSS</h3>
+						<ul class="list">
+							<li class="text--lg">CSS 3</li>
+							<li class="text--lg">SASS</li>
+							<li class="text--lg">Less</li>
+							<li class="text--lg">Flexbox</li>
+							<li class="text--lg">Кроссбраузерная вёрстка</li>
+							<li class="text--lg">Адаптивная вёрска</li>
+							<li class="text--lg">Табличная вёрстка</li>
+							<li class="text--lg">Базовые CSS анимации</li>
+							<li class="text--lg">Bootstrap 3/4</li>
+						</ul>
+					</div>
+					<div class="skills__col">
+						<h3 class="sub-heading">Другое</h3>
+						<ul class="list">
+							<li class="text--lg">BEM</li>
+							<li class="text--lg">SVG</li>
+							<li class="text--lg">Git</li>
+							<li class="text--lg">GitHub/GitLab</li>
+							<li class="text--lg">CSS спрайты</li>
+							<li class="text--lg">NPM/Yarn</li>
+							<li class="text--lg">Gulp</li>
+						</ul>
+					</div>
 				</div>
-			</main>
-			<section class="projects" id="projects">
-				<h2 class="heading">Projects</h2>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">Todo List on pure JS</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Design. Creating Todo on pure JS. Used by ES6. A Todo class was created. Practice CSS Grid.
-								</p>
-							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/todo-js/" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">CSS</li>
-									<li class="tag-item">SASS</li>
-									<li class="tag-item">CSS Grid</li>
-									<li class="tag-item">JavaScript</li>
-									<li class="tag-item">ES6</li>
-									<li class="tag-item">GIT</li>
-								</ul>
-							</div>
+			</section>
+			<section class="services">
+				<h2 class="heading" id="services">Программы и сервисы</h2>
+				<div class="services__row">
+					<div class="services__inner">
+						<div class="services__col">
+							<ul class="services__list">
+								<li class="services__item">
+									<p class="text--lg">
+										Adobe Photoshop
+									</p>
+								</li>
+								<li class="services__item">
+									<p class="text--lg">
+										Adobe Illustrator
+									</p>
+								</li>
+								<li class="services__item">
+									<p class="text--lg">
+										Adobe InDesign
+									</p>
+								</li>
+							</ul>
 						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/todo-js/" target="_blank" rel="nofollow noopener noreferrer">view</a>
+						<div class="services__col">
+							<ul class="services__list">
+								<li class="services__item">
+									<p class="text--lg">
+										Figma
+									</p>
+								</li>
+								<li class="services__item">
+									<p class="text--lg">
+										Avocode
+									</p>
+								</li>
+								<li class="services__item">
+									<p class="text--lg">
+										FileZilla
+									</p>
+								</li>
+							</ul>
 						</div>
-					</div>
-					<div class="project__img">
-						<img class="project__img-desc" src="./static/images/project__todo-desc.jpg" alt="" />
-					</div>
-				</section>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">Test work</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Test work. One-screen business card site. Adaptive and cross-browser (IE11 +) layout. Used CSS-Animations. Script written in pure JS.
-								</p>
-							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/test-work-1" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">HANDLEBARS</li>
-									<li class="tag-item">CSS</li>
-									<li class="tag-item">SASS</li>
-									<li class="tag-item">CSS-Animations</li>
-									<li class="tag-item">JavaScript</li>
-									<li class="tag-item">GULP</li>
-									<li class="tag-item">GIT</li>
-								</ul>
-							</div>
-						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/test-work-1/tmp/html/home.html" target="_blank" rel="nofollow noopener noreferrer">view</a>
+						<div class="services__col">
+							<ul class="services__list">
+								<li class="services__item">
+									<p class="text--lg">
+										PageSpeed Insights/Audits
+									</p>
+								</li>
+								<li class="services__item">
+									<p class="text--lg">
+										TinyPNG/Squoosh
+									</p>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="project__img">
-						<img class="project__img-mob" src="./static/images/project__test-work-1-mob.jpg" alt="" />
-						<img class="project__img-desc" src="./static/images/project__test-work-1-desc.jpg" alt="" />
+				</div>
+			</section>
+			<section class="education">
+				<h2 class="heading" id="education">Образование</h2>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2019-11-21">21.11.2019</time> -
+							<time datetime="2019-12-31">31.12.2019</time>
+						</p>
 					</div>
-				</section>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">Sadcentr.by</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Multipage site. Design of all pages of the site. Adaptive and cross-browser (IE11 +) layout. Connecting the JQuery plugin, connecting Yandex.Maps, writing your own scripts in pure JS and JQuery.
-								</p>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://learn.javascript.ru/courses/jsbasic" target="_blank" rel="nofollow noopener noreferrer">Курс "JavaScript/​DOM/​Интерфейсы" для новичков</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info">Курсы от <a href="https://learn.javascript.ru/" target="_blank" rel="nofollow noopener noreferrer">learn.javascript.ru</a>.</p>
+							<div class="text education__info">
+								<span>Главные темы:</span>
+								<ol class="counter counter-1">
+									<li>Базовый JavaScript;</li>
+									<li>Документ, генерация интерфейса;</li>
+									<li>События, взаимодействие с посетителем;</li>
+									<li>Проект;</li>
+									<li>Сетевая коммуникация, AJAX.</li>
+								</ol>
 							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/sadcenterby" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">HANDLEBARS</li>
-									<li class="tag-item">CSS</li>
-									<li class="tag-item">SASS</li>
-									<li class="tag-item">JavaScript</li>
-									<li class="tag-item">JQUERY</li>
-									<li class="tag-item">SLICK.JS</li>
-									<li class="tag-item">SVG</li>
-									<li class="tag-item">GULP</li>
-									<li class="tag-item">GIT</li>
-								</ul>
+							<div class="education__item-img">
+								<img src="./static/images/certificate-learn-js-ru.jpg" alt="Сертификат от learn.javascript.ru">
 							</div>
 						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/sadcenterby/tmp/html/" target="_blank" rel="nofollow noopener noreferrer">view</a>
+					</div>
+				</div>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2019">2019</time>
+						</p>
+					</div>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener noreferrer">freeCodeCamp</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info"><span>Сертификация алгоритмов и структур данных JavaScript;</span>Сертификация Front-end библиотек (JQuery).</p>
 						</div>
 					</div>
-					<div class="project__img">
-						<img class="project__img-mob" src="./static/images/project__sadcentrby-mob.jpg" alt="" />
-						<img class="project__img-desc" src="./static/images/project__sadcentrby-desc.jpg" alt="" />
+				</div>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2019">2019</time>
+						</p>
 					</div>
-				</section>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">Test project</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Bootstrap-based adaptive and cross-browser (IE10 +) layout; smooth anchor scrolling and popup in jQuery.
-								</p>
-							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/practice_1" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">SASS</li>
-									<li class="tag-item">BOOTSTRAP</li>
-									<li class="tag-item">JQUERY</li>
-								</ul>
-							</div>
-						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/practice_1/" target="_blank" rel="nofollow noopener noreferrer">view</a>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://praktikum.yandex.ru/web/" target="_blank" rel="nofollow noopener noreferrer">Яндекс.Практикум</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info">Бесплатная часть курса front-end developer.</p>
 						</div>
 					</div>
-					<div class="project__img">
-						<img class="project__img-mob" src="./static/images/project__test-1-mob.jpg" alt="" />
-						<img class="project__img-desc" src="./static/images/project__test-1-desc.jpg" alt="" />
+				</div>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2018">2018</time> -
+							<time datetime="2019">2019</time>
+						</p>
 					</div>
-				</section>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">ByCard by Bot</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Site design (Desktop + Mobile); Bootstrap-based adaptive and cross-browser (IE10 +) layout; connection to bot.
-								</p>
-							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/bycard-by_bot/" target="_blank" rel="nofollow noopener noreferrer">GitHub (dev branch)</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">CSS</li>
-									<li class="tag-item">BOOTSTRAP</li>
-									<li class="tag-item">JQUERY</li>
-								</ul>
-							</div>
-						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/bycard-by_bot/" target="_blank" rel="nofollow noopener noreferrer">view</a>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://geekbrains.ru/" target="_blank" rel="nofollow noopener noreferrer">GeekBrains</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info">Бесплатные курсы; тесты.</p>
 						</div>
 					</div>
-					<div class="project__img">
-						<img class="project__img-mob" src="./static/images/project__bycard-mob.jpg" alt="" />
-						<img class="project__img-desc" src="./static/images/project__bycard-desc.jpg" alt="" />
+				</div>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2017">2017</time> -
+							<time datetime="2018">2018</time>
+						</p>
 					</div>
-				</section>
-				<section class="project">
-					<div class="project__about">
-						<div class="project__info">
-							<h3 class="project__tittle sub-heading">Site portfolio (ver 1.0)</h3>
-							<div class="project__descr">
-								<p class="text--bold">
-									What was done:
-								</p>
-								<p class="text">
-									Bootstrap-based adaptive and cross-browser (IE11 - partially) layout.
-								</p>
-							</div>
-							<small class="project__link">
-								The code can be viewed in
-								<a href="https://github.com/junfrenkixp/practice_3" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
-							</small>
-							<div class="project__tags">
-								<ul class="tag-list">
-									<li class="tag-item">HTML</li>
-									<li class="tag-item">CSS</li>
-									<li class="tag-item">BOOTSTRAP</li>
-									<li class="tag-item">ANIMATE.CSS</li>
-									<li class="tag-item">WOW.JS</li>
-								</ul>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://glo.academy/" target="_blank" rel="nofollow noopener noreferrer">Glo Academy</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info">Воркшопы; онлайн вебинары.</p>
+							<div class="education__item-img">
+								<img src="./static/images/certificate-glo-1.jpg" class="img-sm" alt="Сертификат от Glo Academy">
+								<img src="./static/images/certificate-glo-2.jpg" class="img-sm" alt="Сертификат от Glo Academy">
+								<img src="./static/images/certificate-glo-3.jpg" class="img-sm" alt="Сертификат от Glo Academy">
+								<img src="./static/images/certificate-glo-4.jpg" class="img-sm" alt="Сертификат от Glo Academy">
 							</div>
 						</div>
-						<div class="project__btn">
-							<a class="btn btn-primary" href="https://junfrenkixp.github.io/practice_3/" target="_blank" rel="nofollow noopener noreferrer">view</a>
+					</div>
+				</div>
+				<div class="education__item">
+					<div class="education__col-1">
+						<p class="sub-heading">
+							<time datetime="2017">2017</time> -
+							<time datetime="2018">2018</time>
+						</p>
+					</div>
+					<div class="education__col-2">
+						<h3>
+							<a class="education__item-title" href="https://www.belstu.by/" target="_blank" rel="nofollow noopener noreferrer">Белорусский Государственный Технологический Университет</a>
+						</h3>
+						<div class="education__item-inner">
+							<p class="text education__info">
+								Один курс специальности "Информационные Системы и Технологии".
+							</p>
 						</div>
 					</div>
-					<div class="project__img">
-						<img class="project__img-mob" src="./static/images/project__portfolio-1-mob.jpg" alt="" />
-						<img class="project__img-desc" src="./static/images/project__portfolio-1-desc.jpg" alt="" />
+				</div>
+			</section>
+			<section class="experience">
+				<h2 class="heading" id="experience">Опыт</h2>
+				<div class="experience__item">
+					<div class="experience__col-1">
+						<p class="sub-heading">
+							<time datetime="2020-05">05.2020</time> -
+							<span>настоящее время</span>
+						</p>
 					</div>
-				</section>
+					<div class="experience__col-2">
+						<h3 class="experience__item-title">
+							Фриланс
+						</h3>
+						<h4 class="experience__item-sub-title">HTML-верстальщик</h4>
+						<div class="experience__item-inner">
+							<p class="text experience__info">
+								<span>Работа с командой разработчиков.</span>
+								<span>Вёрстка сайтов с помощью Pug, CSS, JS, Jquery.</span>
+								<span>Внесение правок в существующий код.</span>
+								<span>Работал над такими проектами как <a href="https://transparentbusiness.com/" target="_blank" rel="nofollow noopener noreferrer">TransparentBusiness</a> и <a href="https://axiainvestments.com/" target="_blank" rel="nofollow noopener noreferrer">Axia</a>.</span>
+								<span>Вёрстка под IE8+ + JS.</span>
+							</p>
+							<ul class="tag-list">
+								<li class="tag-item">HTML</li>
+								<li class="tag-item">Pug</li>
+								<li class="tag-item">CSS</li>
+								<li class="tag-item">Sass</li>
+								<li class="tag-item">Less</li>
+								<li class="tag-item">JavaScript</li>
+								<li class="tag-item">JQuery</li>
+								<li class="tag-item">npm/yarn</li>
+								<li class="tag-item">BEM</li>
+								<li class="tag-item">Git</li>
+								<li class="tag-item">Bitbucket</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="experience__item">
+					<div class="experience__col-1">
+						<p class="sub-heading">
+							<time datetime="2020-05">05.2020</time> -
+							<time datetime="2020-07">07.2020</time>
+						</p>
+					</div>
+					<div class="experience__col-2">
+						<h3 class="experience__item-title">
+							<a href="https://htmllessons.ru/" target="_blank" rel="nofollow noopener noreferrer">
+								htmllessons.ru
+							</a>
+						</h3>
+						<h4 class="experience__item-sub-title">Контент-менеджер</h4>
+						<div class="experience__item-inner">
+							<p class="text experience__info">
+								<span>На этом обучающем ресурсе я был контент-менеджером. Я написал несколько обучающих статей на тему вёрстки, которые в сумме просмотрели больше тысячи раз.</span>
+							</p>
+							<div class="text experience__info">
+								<span>Примеры моих статей:</span>
+								<ol class="counter counter-2">
+									<li>
+										<img src="./static/images/numeric_list.jpg" alt="Статья 'CSS счётчики'">
+										<a href="https://htmllessons.ru/blog/front-end/css-schetchiki" target="_blank" rel="nofollow noopener noreferrer">
+											"CSS счётчики"
+										</a>
+										<small>В данной статье мы узнаем, что же такое CSS счётчики и зачем они вообще нужны</small>
+									</li>
+									<li>
+										<img src="./static/images/dry-css.jpg" alt="Статья 'DRY для верстальщиков'">
+										<a href="https://htmllessons.ru/blog/front-end/dry-dlya-verstalshchikov" target="_blank" rel="nofollow noopener noreferrer">
+											"DRY для верстальщиков"
+										</a>
+										<small>В данной статье мы познакомимся с принципом “Не повторяйся” на примерах SASS, Pug и JS.</small>
+									</li>
+									<li>
+										<img src="./static/images/box-sizing.jpg" alt="Статья 'Свойство box-sizing'">
+										<a href="https://htmllessons.ru/blog/front-end/svoystvo-box-sizing" target="_blank" rel="nofollow noopener noreferrer">
+											"Свойство box-sizing"
+										</a>
+										<small>В этой статье мы рассмотрим одно из самых интересных и полезных CSS свойств.</small>
+									</li>
+									<li>
+										<img src="./static/images/css.jpg" alt="Статья 'Рекомендации написания CSS-кода'">
+										<a href="https://htmllessons.ru/blog/front-end/rekomendacii-napisaniya-css-koda" target="_blank" rel="nofollow noopener noreferrer">
+											"Рекомендации написания CSS-кода"
+										</a>
+										<small>В данной статье мы рассмотрим основные рекомендации стилизации CSS-кода и исправим «нечитаемый» CSS.</small>
+									</li>
+								</ol>
+							</div>
+							<ul class="tag-list">
+								<li class="tag-item">HTML</li>
+								<li class="tag-item">CSS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="experience__item">
+					<div class="experience__col-1">
+						<p class="sub-heading">
+							<time datetime="2019-10">10.2019</time> -
+							<time datetime="2019-11">11.2019</time>
+						</p>
+					</div>
+					<div class="experience__col-2">
+						<h3 class="experience__item-title">
+							<a href="https://ozitag.com/" target="_blank" rel="nofollow noopener noreferrer">
+								OziTag
+							</a>
+						</h3>
+						<h4 class="experience__item-sub-title">HTML-верстальщик</h4>
+						<div class="experience__item-inner">
+							<p class="text experience__info">
+								<span>В этой компании по разработке ПО в мои обязанности входила вёрстка лендингов, корпоративных сайтов, электронных писем вместе с командой разработчиков.</span>
+								<br>
+								<span>Я работал с HTML, Handlebars, CSS, SASS, Gulp, Git, GitLab.</span>
+								<br>
+								<span>Компания дала мне первый коммерческий опыт разработки и помощь в развитии меня как профессионала. Я закрепил основные знания вёрстки, познакомился с шаблонизатором Handlebars, научился работать с Gulp и Git. Так же появился практический опыт вёрстки электронных писем.</span>
+							</p>
+							<ul class="tag-list">
+								<li class="tag-item">HTML</li>
+								<li class="tag-item">Handlebars</li>
+								<li class="tag-item">CSS</li>
+								<li class="tag-item">Sass</li>
+								<li class="tag-item">SVG</li>
+								<li class="tag-item">npm/yarn</li>
+								<li class="tag-item">BEM</li>
+								<li class="tag-item">Git</li>
+								<li class="tag-item">Gitlab</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
+	</main>
+	<section class="projects" id="projects">
+		<h2 class="heading">Проекты</h2>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">Todo List на чистом JS</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Дизайн. Создание Todo на чистом JS. Используется ES6. Был создан класс Todo. Практика CSS Grid.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/todo-js/" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">CSS</li>
+							<li class="tag-item">SASS</li>
+							<li class="tag-item">CSS Grid</li>
+							<li class="tag-item">JavaScript</li>
+							<li class="tag-item">ES6</li>
+							<li class="tag-item">GIT</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/todo-js/" target="_blank" rel="nofollow noopener noreferrer">Смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-desc" src="./static/images/project__todo-desc.jpg" alt="" />
+			</div>
+		</section>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">Тестовая работа</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Тестовая работа. Одноэкранный сайт-визитка. Адаптивная и кросс-браузерная (IE11 +) верстка. Использовались CSS-Анимации. Написан скрипт на чистом JS.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/test-work-1" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">HANDLEBARS</li>
+							<li class="tag-item">CSS</li>
+							<li class="tag-item">SASS</li>
+							<li class="tag-item">CSS-Animations</li>
+							<li class="tag-item">JavaScript</li>
+							<li class="tag-item">GULP</li>
+							<li class="tag-item">GIT</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/test-work-1/tmp/html/home.html" target="_blank" rel="nofollow noopener noreferrer">Смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-mob" src="./static/images/project__test-work-1-mob.jpg" alt="" />
+				<img class="project__img-desc" src="./static/images/project__test-work-1-desc.jpg" alt="" />
+			</div>
+		</section>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">Sadcentr.by</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Многостраничный сайт. Дизайн всех страниц сайта. Адаптивная и кросс-браузерная (IE11 +) верстка. Подключение плагина JQuery,  подключение Яндекс.Карты, написание собственных скриптов на чистом JS и JQuery.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/sadcenterby" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">HANDLEBARS</li>
+							<li class="tag-item">CSS</li>
+							<li class="tag-item">SASS</li>
+							<li class="tag-item">JavaScript</li>
+							<li class="tag-item">JQUERY</li>
+							<li class="tag-item">SLICK.JS</li>
+							<li class="tag-item">SVG</li>
+							<li class="tag-item">GULP</li>
+							<li class="tag-item">GIT</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/sadcenterby/tmp/html/" target="_blank" rel="nofollow noopener noreferrer">смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-mob" src="./static/images/project__sadcentrby-mob.jpg" alt="" />
+				<img class="project__img-desc" src="./static/images/project__sadcentrby-desc.jpg" alt="" />
+			</div>
+		</section>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">Тестовый проект</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Адаптивная и кросс-браузерная (IE10 +) верстка на основе Bootstrap; плавная прокрутка до якоря и попап на jQuery.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/practice_1" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">SASS</li>
+							<li class="tag-item">BOOTSTRAP</li>
+							<li class="tag-item">JQUERY</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/practice_1/" target="_blank" rel="nofollow noopener noreferrer">смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-mob" src="./static/images/project__test-1-mob.jpg" alt="" />
+				<img class="project__img-desc" src="./static/images/project__test-1-desc.jpg" alt="" />
+			</div>
+		</section>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">ByCard by Bot</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Дизайн сайта (Desktop + Mobile); Адаптивная и кросс-браузерная (IE10 +) верстка на основе Bootstrap; подключение к боту.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/bycard-by_bot/" target="_blank" rel="nofollow noopener noreferrer">GitHub (dev branch)</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">CSS</li>
+							<li class="tag-item">BOOTSTRAP</li>
+							<li class="tag-item">JQUERY</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/bycard-by_bot/" target="_blank" rel="nofollow noopener noreferrer">смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-mob" src="./static/images/project__bycard-mob.jpg" alt="" />
+				<img class="project__img-desc" src="./static/images/project__bycard-desc.jpg" alt="" />
+			</div>
+		</section>
+		<section class="project">
+			<div class="project__about">
+				<div class="project__info">
+					<h3 class="project__tittle sub-heading">Site portfolio (ver 1.0)</h3>
+					<div class="project__descr">
+						<p class="text--bold">
+							Что было сделано:
+						</p>
+						<p class="text">
+							Дизайн сайта (Desktop + Mobile). Адаптивная и кросс-браузерная (IE11 — частично) верстка на основе Bootstrap.
+						</p>
+					</div>
+					<small class="project__link">
+						Код можно посмотреть на
+						<a href="https://github.com/junfrenkixp/practice_3" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>.
+					</small>
+					<div class="project__tags">
+						<ul class="tag-list">
+							<li class="tag-item">HTML</li>
+							<li class="tag-item">CSS</li>
+							<li class="tag-item">BOOTSTRAP</li>
+							<li class="tag-item">ANIMATE.CSS</li>
+							<li class="tag-item">WOW.JS</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project__btn">
+					<a class="btn btn-primary" href="https://junfrenkixp.github.io/practice_3/" target="_blank" rel="nofollow noopener noreferrer">смотреть</a>
+				</div>
+			</div>
+			<div class="project__img">
+				<img class="project__img-mob" src="./static/images/project__portfolio-1-mob.jpg" alt="" />
+				<img class="project__img-desc" src="./static/images/project__portfolio-1-desc.jpg" alt="" />
+			</div>
+		</section>
+	</section>
+</div>
 
-		<footer class="footer">
-			<a href="#header" class="footer__up-btn"></a>
-		</footer>
+<footer class="footer">
+	<a href="#header" class="footer__up-btn"></a>
+</footer>
 
-		<script src="./static/js/ui.js"></script>
-	</body>
+<script src="static/js/script.js"></script>
+</body>
 </html>
