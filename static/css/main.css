@@ -949,10 +949,18 @@ main {
 	color: #00cec9;
 	text-decoration: none;
 }
+.project__btn {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 @media (max-width: 1023px) {
 	.project__btn {
-		text-align: center;
+		align-items: center;
 	}
+}
+.project__btn a + a {
+	margin-top: 20px;
 }
 .project__tags {
 	margin-top: 50px;
@@ -1126,12 +1134,14 @@ main {
 }
 .education__col-1 {
 	min-width: 210px;
+	max-width: 210px;
 	margin-right: 40px;
 	padding-right: 60px;
 }
 @media (max-width: 1023px) {
 	.education__col-1 {
 		min-width: auto;
+		max-width: 100%;
 		margin-right: 0;
 		margin-bottom: 10px;
 		padding-right: 0;
@@ -1262,12 +1272,14 @@ main {
 
 .experience__col-1 {
 	min-width: 210px;
+	max-width: 210px;
 	margin-right: 15px;
 	padding-right: 60px;
 }
 @media (max-width: 1023px) {
 	.experience__col-1 {
 		min-width: auto;
+		max-width: 100%;
 		margin-right: 0;
 		margin-bottom: 10px;
 		padding-right: 0;
